@@ -1,0 +1,26 @@
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.contact-text {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.contact-button {
+  font-size: 18px;
+  color: #007bff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  display: inline-block;
+  transition: all 0.3s;
+}
