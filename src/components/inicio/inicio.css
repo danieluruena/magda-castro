@@ -3,11 +3,12 @@
   z-index: 10;
   position: relative;
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: 171px auto;
   grid-template-columns: 493px auto;
   justify-content: left;
   gap: 30px;
   color: white;
+  height: 590px;
 }
 
 .presentation-title {
