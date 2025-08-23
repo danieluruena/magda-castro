@@ -1,6 +1,7 @@
 import React from 'react';
 import './inicio.css';
 import '../../common.css';
+import { FormatosArtisticos } from './formatosArtisticos/artisticFormats';
 
 export const Inicio: React.FC = () => {
   return (
@@ -13,10 +14,7 @@ export const Inicio: React.FC = () => {
           Explora la belleza de lo macabro y la realidad de la psique trastornada.
         </p>
       </section>
-      <section className="artistic-formats">
-        <h2 className='section-title'>Diversas formas de expresión</h2>
-        <p className='section-description'>Cada idea requiere su propia forma de expresarse.</p>
-      </section>
+      <FormatosArtisticos />
     </>
   );
 };

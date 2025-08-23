@@ -9,14 +9,14 @@ export const Header: React.FC = () => {
       {
         location.pathname === '/' && (
           <div className="video-container">
-            <video className="bg-video" autoPlay muted loop src="/vbg.mp4">
+            <video className="bg-video" autoPlay muted loop src="/assets/vbg.mp4">
             </video>
           </div>
         )
       }
       <div className="header-content">
         <NavLink to="/">
-          <img src="/logo_blanco.png" alt="Magda Castro" className="logo" />
+          <img src="/assets/logo_blanco.png" alt="Magda Castro" className="logo" />
         </NavLink>
         <nav className="nav">
           <ul className="nav-list">
