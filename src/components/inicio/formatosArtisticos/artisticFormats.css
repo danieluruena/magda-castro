@@ -1,53 +1,15 @@
 .artistic-formats {
-  background-image: url('../../../../public/assets/section-bg.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../../../public/assets/section-bg.png');
   background-size: cover;
   background-position: center;
-  opacity: 0.8;
+  background-attachment: fixed;
   width: 100%;
   padding: 80px 0;
   display: grid;
   grid-template-columns: 35% 35%;
   gap: 60px;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   margin: 26px auto;
-}
-
-.artistic-format {
-  display: grid;
-  grid-template-columns: 90% 10%;
-  align-items: center;
-}
-
-.artistic-format-image {
-  width: 100%;
-  height: 23vw;
-  border-radius: 20px;
-  grid-column: 1 / -1;
-  background-color: black;
-  margin-bottom: 20px;
-}
-
-.artistic-format-title {
-  font-size: 36px;
-  margin: 12px 0 8px;
-  font-family: 'Carmorant Garamond', serif;
-  line-height: 1.3em;
-  font-weight: 400;
-}
-
-.artistic-format-description {
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  line-height: 1.5em;
-}
-
-.artistic-format-btn {
-  grid-row: 2 / 3;
-  grid-column: 2 / 3;
-  text-decoration: none;
-  color: black;
-  font-size: 32px;
-  font-weight: 400;
+  z-index: 10;
 }

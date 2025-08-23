@@ -12,6 +12,12 @@
   max-width: 250px;
 }
 
+.logo-link {
+  width: 15%;
+  align-self: center;
+  justify-self: center;
+}
+
 .nav {
   display: flex;
   justify-content: center;

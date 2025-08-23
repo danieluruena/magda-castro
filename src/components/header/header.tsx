@@ -1,9 +1,12 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
+import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 import './header.css';
+import '../../common.css';
 
 export const Header: React.FC = () => {
   const location = useLocation();
+  useScrollAnimation();
   return (
     <header className="header">
       {
@@ -15,10 +18,10 @@ export const Header: React.FC = () => {
         )
       }
       <div className="header-content">
-        <NavLink to="/">
+        <NavLink className="logo-link" to="/">
           <img src="/assets/logo_blanco.png" alt="Magda Castro" className="logo" />
         </NavLink>
-        <nav className="nav">
+        <nav className="nav fade-in">
           <ul className="nav-list">
             <li><NavLink to="/" className="nav-link">Inicio</NavLink></li>
             <li><NavLink to="/galeria" className="nav-link">Galería</NavLink></li>

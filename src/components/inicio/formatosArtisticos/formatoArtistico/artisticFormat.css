@@ -6,6 +6,8 @@
 
 .image-container {
   grid-column: 1 / -1;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
 .artistic-format-image {
@@ -16,6 +18,12 @@
   margin-bottom: 20px;
   display: block;
   object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.image-container:hover .artistic-format-image {
+  transform: scale(0.95);
+  filter: brightness(0.7);
 }
 
 .artistic-format-title {

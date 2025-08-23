@@ -2,8 +2,10 @@ import React from 'react';
 import './inicio.css';
 import '../../common.css';
 import { FormatosArtisticos } from './formatosArtisticos/artisticFormats';
+import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 
 export const Inicio: React.FC = () => {
+  useScrollAnimation();
   return (
     <>
       <section className="presentation">

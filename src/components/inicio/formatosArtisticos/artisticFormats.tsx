@@ -1,8 +1,11 @@
 import './artisticFormats.css';
 import '../../../common.css';
 import { ArtisticFormat } from './formatoArtistico/artisticFormat';
+import { useScrollAnimation } from '../../../hooks/useScrollAnimation';
 
 export const FormatosArtisticos: React.FC = () => {
+  useScrollAnimation();
+  
   const artisticFormats = [
     {
       image: 'escultura.jpg',
@@ -31,8 +34,8 @@ export const FormatosArtisticos: React.FC = () => {
   ];
   return (
     <section className="artistic-formats">
-      <h2 className='section-title'>Diversas formas de expresión</h2>
-      <p className='section-description'>Cada idea requiere su propia forma de expresarse.</p>
+      <h2 className='section-title fade-in'>Diversas formas de expresión</h2>
+      <p className='section-description fade-in'>Cada idea requiere su propia forma de expresarse.</p>
       {artisticFormats.map((format) => (
         <ArtisticFormat
           key={format.title}
