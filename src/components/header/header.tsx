@@ -1,24 +1,27 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
+import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 import './header.css';
+import '../../common.css';
 
 export const Header: React.FC = () => {
   const location = useLocation();
+  useScrollAnimation();
   return (
     <header className="header">
       {
         location.pathname === '/' && (
           <div className="video-container">
-            <video className="bg-video" autoPlay muted loop src="/vbg.mp4">
+            <video className="bg-video" autoPlay muted loop src="/assets/vbg.mp4">
             </video>
           </div>
         )
       }
       <div className="header-content">
-        <NavLink to="/">
-          <img src="/logo_blanco.png" alt="Magda Castro" className="logo" />
+        <NavLink className="logo-link" to="/">
+          <img src="/assets/logo_blanco.png" alt="Magda Castro" className="logo" />
         </NavLink>
-        <nav className="nav">
+        <nav className="nav fade-in">
           <ul className="nav-list">
             <li><NavLink to="/" className="nav-link">Inicio</NavLink></li>
             <li><NavLink to="/galeria" className="nav-link">Galería</NavLink></li>

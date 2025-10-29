@@ -1,10 +1,13 @@
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
+}
+
+.fade-in.visible {
   animation: fadeInUp 1s ease-out forwards;
 }
 
-.fade-in:nth-child(2) {
+.fade-in.visible:nth-child(2) {
   animation-delay: 0.3s;
 }
 
@@ -13,4 +16,22 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.2em;
+  font-family: 'Cormorant Garamond', serif;
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+.section-description {
+  font-size: 24px;
+  line-height: 1.5em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  grid-column: 1 / -1;
 }

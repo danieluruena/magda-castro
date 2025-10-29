@@ -5,10 +5,17 @@
 }
 
 .logo {
-  height: 60px;
   margin-bottom: 20px;
-  width: 280px;
-  height: 281px;
+  width: 15%;
+  height: auto;
+  min-width: 200px;
+  max-width: 250px;
+}
+
+.logo-link {
+  width: 15%;
+  align-self: center;
+  justify-self: center;
 }
 
 .nav {
@@ -49,10 +56,11 @@
     z-index: 0;
     display: block;
     width: 100%;
-    height: 78%;
+    height: 85%;
     object-fit: cover;
     object-position: center;
     opacity: 0.6;
+    max-height: 900px;
 }
 
 .header-content {
