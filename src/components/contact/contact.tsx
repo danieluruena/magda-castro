@@ -1,7 +1,7 @@
 import React from 'react';
-import './contacto.css';
+import './contact.css';
 
-export const Contacto: React.FC = () => {
+export const Contact: React.FC = () => {
   return (
     <section id="contact" className="contact">
       <h3 className="contact-title">Contact</h3>

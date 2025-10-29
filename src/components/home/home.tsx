@@ -1,10 +1,10 @@
 import React from 'react';
-import './inicio.css';
+import './home.css';
 import '../../common.css';
-import { FormatosArtisticos } from './formatosArtisticos/artisticFormats';
+import { ArtisticFormats } from './artisticFormats/artisticFormats';
 import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 
-export const Inicio: React.FC = () => {
+export const Home: React.FC = () => {
   useScrollAnimation();
   return (
     <>
@@ -16,7 +16,7 @@ export const Inicio: React.FC = () => {
           Explora la belleza de lo macabro y la realidad de la psique trastornada.
         </p>
       </section>
-      <FormatosArtisticos />
+      <ArtisticFormats />
     </>
   );
 };

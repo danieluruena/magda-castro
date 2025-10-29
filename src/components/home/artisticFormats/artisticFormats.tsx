@@ -1,11 +1,11 @@
 import './artisticFormats.css';
 import '../../../common.css';
-import { ArtisticFormat } from './formatoArtistico/artisticFormat';
+import { ArtisticFormat } from './artisticFormat/artisticFormat';
 import { useScrollAnimation } from '../../../hooks/useScrollAnimation';
 
-export const FormatosArtisticos: React.FC = () => {
+export const ArtisticFormats: React.FC = () => {
   useScrollAnimation();
-  
+
   const artisticFormats = [
     {
       image: 'escultura.jpg',

@@ -1,5 +1,5 @@
 
-export const Galeria = () => {
+export const Gallery = () => {
   return (
     <div>
       <h1>Galeria</h1>

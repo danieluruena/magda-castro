@@ -1,7 +1,7 @@
 import React from 'react';
-import './sobre-mi.css';
+import './about-me.css';
 
-export const SobreMi: React.FC = () => {
+export const AboutMe: React.FC = () => {
   return (
     <section id="about" className="about">
       <h3 className="about-title">About</h3>

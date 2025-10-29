@@ -1,7 +1,7 @@
 import React from 'react';
-import './servicios.css';
+import './services.css';
 
-export const Servicios: React.FC = () => {
+export const Services: React.FC = () => {
   const projects = [
     { title: 'Project One', description: 'Creative design solution' },
     { title: 'Project Two', description: 'Innovative approach' },

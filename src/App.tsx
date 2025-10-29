@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { SobreMi } from './components/sobre-mi/sobre-mi';
-import { Servicios } from './components/servicios/servicios';
-import { Contacto } from './components/contacto/contacto';
-import { Inicio } from './components/inicio/inicio';
+import { AboutMe } from './components/about-me/about-me';
+import { Services } from './components/services/services';
+import { Contact } from './components/contact/contact';
+import { Home } from './components/home/home';
 import { Header } from './components/header/header';
-import { Galeria } from './components/galeria/galeria';
-import { Tienda } from './components/tienda/tienda';
+import { Gallery } from './components/gallery/gallery';
+import { Store } from './components/store/store';
 import { Blog } from './components/blog/blog';
 import './App.css';
 
@@ -16,13 +16,13 @@ const App: React.FC = () => {
       <Header />
       <div className="main-container">
         <Routes>
-          <Route path="/" element={<Inicio />} />
-          <Route path="/galeria" element={<Galeria />} />
-          <Route path="/servicios" element={<Servicios />} />
-          <Route path="/sobre-mi" element={<SobreMi />} />
-          <Route path="/tienda" element={<Tienda />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/galeria" element={<Gallery />} />
+          <Route path="/servicios" element={<Services />} />
+          <Route path="/sobre-mi" element={<AboutMe />} />
+          <Route path="/tienda" element={<Store />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/contacto" element={<Contacto />} />
+          <Route path="/contacto" element={<Contact />} />
         </Routes>
       </div>
     </Router>
