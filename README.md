@@ -58,11 +58,21 @@ Los archivos optimizados se generarán en la carpeta `build/`.
 
 ```
 magda-castro/
-├── public/           # Archivos públicos estáticos
+├── public/
+│   ├── assets/       # Recursos multimedia (imágenes, videos)
+│   └── index.html    # Archivo HTML principal
 ├── src/
 │   ├── components/   # Componentes React organizados por sección
+│   │   ├── about-me/ # Componente "Sobre mí"
+│   │   ├── blog/     # Componente Blog
+│   │   ├── contact/  # Componente Contacto
+│   │   ├── gallery/  # Componente Galería
+│   │   ├── header/   # Componente Header/Navegación
+│   │   ├── home/     # Componente Inicio
+│   │   ├── services/ # Componente Servicios
+│   │   └── store/    # Componente Tienda
+│   ├── hooks/        # Custom hooks de React
 │   ├── App.tsx       # Componente principal
 │   └── index.tsx     # Punto de entrada
-├── assets/           # Recursos multimedia
 └── package.json      # Dependencias y scripts
 ```
