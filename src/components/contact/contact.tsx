@@ -1,5 +1,5 @@
-import React from 'react';
-import './contact.css';
+import React from 'react'
+import './contact.css'
 
 export const Contact: React.FC = () => {
   return (
@@ -12,5 +12,5 @@ export const Contact: React.FC = () => {
         Get in Touch
       </a>
     </section>
-  );
-};
+  )
+}

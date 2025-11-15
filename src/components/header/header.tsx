@@ -1,11 +1,11 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import { useScrollAnimation } from '../../hooks/useScrollAnimation';
-import './header.css';
-import '../../common.css';
+import React from 'react'
+import { NavLink } from 'react-router-dom'
+import { useScrollAnimation } from '../../hooks/useScrollAnimation'
+import './header.css'
+import '../../common.css'
 
 export const Header: React.FC = () => {
-  useScrollAnimation();
+  useScrollAnimation()
 
   return (
     <header className="header">
@@ -42,5 +42,5 @@ export const Header: React.FC = () => {
         </nav>
       </div>
     </header>
-  );
-};
+  )
+}

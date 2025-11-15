@@ -1,15 +1,17 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { AboutMe } from './components/about-me/about-me';
-import { Services } from './components/services/services';
-import { Contact } from './components/contact/contact';
-import { Home } from './components/home/home';
-import { Header } from './components/header/header';
-import { Gallery } from './components/gallery/gallery';
-import { Store } from './components/store/store';
-import { Blog } from './components/blog/blog';
-import { Footer } from './components/footer/footer';
-import './App.css';
+import React from 'react'
+import {
+ BrowserRouter as Router, Routes, Route, 
+} from 'react-router-dom'
+import { AboutMe } from './components/about-me/about-me'
+import { Services } from './components/services/services'
+import { Contact } from './components/contact/contact'
+import { Home } from './components/home/home'
+import { Header } from './components/header/header'
+import { Gallery } from './components/gallery/gallery'
+import { Store } from './components/store/store'
+import { Blog } from './components/blog/blog'
+import { Footer } from './components/footer/footer'
+import './App.css'
 
 const App: React.FC = () => {
   return (
@@ -29,7 +31,7 @@ const App: React.FC = () => {
       <Footer />
     </Router>
 
-  );
-};
+  )
+}
 
-export default App;
+export default App

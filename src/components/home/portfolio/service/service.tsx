@@ -1,5 +1,5 @@
-import { NavLink } from "react-router-dom";
-import './service.css';
+import { NavLink } from 'react-router-dom'
+import './service.css'
 
 type ServiceProps = {
   title: string;
@@ -8,7 +8,9 @@ type ServiceProps = {
   link: string;
 };
 
-export const Service: React.FC<ServiceProps> = ({ title, description, imageUrl, link }) => {
+export const Service: React.FC<ServiceProps> = ({
+ title, description, imageUrl, link, 
+}) => {
   return (
     <div className='service'>
       <NavLink className="image-container fade-in" to={link}>
@@ -21,4 +23,4 @@ export const Service: React.FC<ServiceProps> = ({ title, description, imageUrl, 
       </div>
     </div>
   )
-};
+}

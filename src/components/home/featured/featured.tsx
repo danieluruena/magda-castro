@@ -1,9 +1,9 @@
-import { useScrollAnimation } from '../../../hooks/useScrollAnimation';
-import './featured.css';
-import { Work } from './work/work';
+import { useScrollAnimation } from '../../../hooks/useScrollAnimation'
+import './featured.css'
+import { Work } from './work/work'
 
 export const Featured: React.FC = () => {
-  useScrollAnimation();
+  useScrollAnimation()
   const featuredWorks = [
     {
       title: 'Tenebrarum en Rock al Parque 2025',
@@ -15,7 +15,7 @@ export const Featured: React.FC = () => {
       description: 'Video musical para la banda de metal Athanator de Medellín en el cual participé con mi personaje "La Sacerdotisa", mi obra "Ecos de la existencia", realización de performance, maquillaje, vestuario e indumentaria.',
       videoUrl: 'https://www.youtube.com/embed/gDuTWrkTtMY?h=null&playlist=gDuTWrkTtMY&autoplay=0&controls=1&loop=0&autopause=0&playsinline=1&mute=0',
     },
-  ];
+  ]
   return (
     <section className="featured-works">
       <h2 className="section-title fade-in">Trabajos Destacados</h2>
@@ -25,5 +25,5 @@ export const Featured: React.FC = () => {
         })}
       </div>
     </section>
-  );
-};
+  )
+}

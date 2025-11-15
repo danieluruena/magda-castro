@@ -1,12 +1,12 @@
-import React from 'react';
-import './services.css';
+import React from 'react'
+import './services.css'
 
 export const Services: React.FC = () => {
   const projects = [
     { title: 'Project One', description: 'Creative design solution' },
     { title: 'Project Two', description: 'Innovative approach' },
-    { title: 'Project Three', description: 'Strategic implementation' }
-  ];
+    { title: 'Project Three', description: 'Strategic implementation' },
+  ]
 
   return (
     <section id="work" className="work">
@@ -22,5 +22,5 @@ export const Services: React.FC = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

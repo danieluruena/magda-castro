@@ -1,13 +1,13 @@
-import React from 'react';
-import './home.css';
-import '../../common.css';
-import { ArtisticFormats } from './artisticFormats/artisticFormats';
-import { useScrollAnimation } from '../../hooks/useScrollAnimation';
-import { Portfolio } from './portfolio/portfolio';
-import { Featured } from './featured/featured';
+import React from 'react'
+import './home.css'
+import '../../common.css'
+import { ArtisticFormats } from './artisticFormats/artisticFormats'
+import { useScrollAnimation } from '../../hooks/useScrollAnimation'
+import { Portfolio } from './portfolio/portfolio'
+import { Featured } from './featured/featured'
 
 export const Home: React.FC = () => {
-  useScrollAnimation();
+  useScrollAnimation()
   return (
     <>
       <div className="video-container">
@@ -26,5 +26,5 @@ export const Home: React.FC = () => {
       <Portfolio />
       <Featured />
     </>
-  );
-};
+  )
+}

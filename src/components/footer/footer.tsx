@@ -1,4 +1,4 @@
-import './footer.css';
+import './footer.css'
 
 export const Footer: React.FC = () => {
   return (
@@ -11,5 +11,5 @@ export const Footer: React.FC = () => {
       </div>
       <p>© 2024 Magda Castro. Todos los derechos reservados.</p>
     </footer>
-  );
-};
+  )
+}
