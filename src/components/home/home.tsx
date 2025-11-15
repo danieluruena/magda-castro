@@ -3,11 +3,17 @@ import './home.css';
 import '../../common.css';
 import { ArtisticFormats } from './artisticFormats/artisticFormats';
 import { useScrollAnimation } from '../../hooks/useScrollAnimation';
+import { Portfolio } from './portfolio/portfolio';
+import { Featured } from './featured/featured';
 
 export const Home: React.FC = () => {
   useScrollAnimation();
   return (
     <>
+      <div className="video-container">
+        <video className="bg-video" autoPlay muted loop src="/assets/vbg.mp4">
+        </video>
+      </div>
       <section className="presentation">
         <h2 className="presentation-title fade-in">
           Arte macabro y psicológico
@@ -17,6 +23,8 @@ export const Home: React.FC = () => {
         </p>
       </section>
       <ArtisticFormats />
+      <Portfolio />
+      <Featured />
     </>
   );
 };

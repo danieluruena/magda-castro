@@ -8,6 +8,7 @@ import { Header } from './components/header/header';
 import { Gallery } from './components/gallery/gallery';
 import { Store } from './components/store/store';
 import { Blog } from './components/blog/blog';
+import { Footer } from './components/footer/footer';
 import './App.css';
 
 const App: React.FC = () => {
@@ -25,7 +26,9 @@ const App: React.FC = () => {
           <Route path="/contacto" element={<Contact />} />
         </Routes>
       </div>
+      <Footer />
     </Router>
+
   );
 };
 
