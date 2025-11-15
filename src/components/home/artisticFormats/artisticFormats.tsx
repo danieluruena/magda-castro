@@ -1,10 +1,10 @@
-import './artisticFormats.css';
-import '../../../common.css';
-import { ArtisticFormat } from './artisticFormat/artisticFormat';
-import { useScrollAnimation } from '../../../hooks/useScrollAnimation';
+import './artisticFormats.css'
+import '../../../common.css'
+import { ArtisticFormat } from './artisticFormat/artisticFormat'
+import { useScrollAnimation } from '../../../hooks/useScrollAnimation'
 
 export const ArtisticFormats: React.FC = () => {
-  useScrollAnimation();
+  useScrollAnimation()
 
   const artisticFormats = [
     {
@@ -31,7 +31,7 @@ export const ArtisticFormats: React.FC = () => {
       description: 'Caracterizar las ideas mas controversiales e impactantes para el entorno social.',
       link: '/galeria#personajes-cosplay',
     },
-  ];
+  ]
   return (
     <section className="artistic-formats">
       <h2 className='section-title fade-in'>Diversas formas de expresión</h2>
@@ -46,5 +46,5 @@ export const ArtisticFormats: React.FC = () => {
         />
       ))}
     </section>
-  );
-};
+  )
+}

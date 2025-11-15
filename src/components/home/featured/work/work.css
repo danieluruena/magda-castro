@@ -1,0 +1,26 @@
+.featured-work {
+  width: 100%;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.work-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: 'Carmorant Garamond', serif;
+  line-height: 1.3em;
+  font-weight: 400;
+}
+
+.work-description {
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+.work-video {
+  border: none;
+  height: 40vw;
+  padding: 20px 0;
+}
