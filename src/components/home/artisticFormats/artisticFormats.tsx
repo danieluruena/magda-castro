@@ -20,12 +20,6 @@ export const ArtisticFormats: React.FC = () => {
       link: '/galeria#maquillaje',
     },
     {
-      image: 'pintura.jpg',
-      title: 'Pintura',
-      description: 'Figuras que traen al plano material los conceptos que no se puede explicar con simples palabras.',
-      link: '/galeria#pintura',
-    },
-    {
       image: 'personajes.jpg',
       title: 'Creación de personajes y performance',
       description: 'Caracterizar las ideas mas controversiales e impactantes para el entorno social.',
