@@ -1,5 +1,5 @@
-import { NavLink } from "react-router-dom";
-import './artisticFormat.css';
+import { NavLink } from 'react-router-dom'
+import './artisticFormat.css'
 
 type ArtisticFormatProps = {
   title: string;
@@ -8,7 +8,9 @@ type ArtisticFormatProps = {
   link: string;
 };
 
-export const ArtisticFormat: React.FC<ArtisticFormatProps> = ({ title, description, imageUrl, link }) => {
+export const ArtisticFormat: React.FC<ArtisticFormatProps> = ({
+ title, description, imageUrl, link, 
+}) => {
   return (
     <div className='artistic-format'>
       <NavLink className="image-container fade-in" to={link}>

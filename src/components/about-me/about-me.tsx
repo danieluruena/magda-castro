@@ -1,5 +1,5 @@
-import React from 'react';
-import './about-me.css';
+import React from 'react'
+import './about-me.css'
 
 export const AboutMe: React.FC = () => {
   return (
@@ -11,5 +11,5 @@ export const AboutMe: React.FC = () => {
         meaningful and impactful experiences.
       </p>
     </section>
-  );
-};
+  )
+}
