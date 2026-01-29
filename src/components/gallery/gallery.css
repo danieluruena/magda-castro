@@ -1,0 +1,38 @@
+.main-title {
+  color: white;
+  margin-bottom: 40px;
+}
+
+
+.makeup {
+  padding: 40px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../../public/assets/section-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: grid;
+  gap: 40px;
+  justify-items: center;
+}
+
+.sculptures {
+  color: white;
+  padding: 40px;
+  width: 100%;
+  display: grid;
+  gap: 40px;
+  justify-items: center;
+}
+
+.characters-and-performances {
+  padding: 40px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../../public/assets/section-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: grid;
+  gap: 40px;
+  justify-items: center;
+}
