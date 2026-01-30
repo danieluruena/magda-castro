@@ -10,6 +10,9 @@ interface CarouselProps {
 export const Carousel = ({ images }: CarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0)
 
+  const stage = process.env.STAGE
+  const basePath = stage === 'prod' ? '/.netlify/images?url=/assets/galeria/' : '/assets/galeria/'
+
   const nextImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
   }
@@ -37,7 +40,7 @@ export const Carousel = ({ images }: CarouselProps) => {
         {images.map((image, index) => (
           <img
             key={index}
-            src={`/assets/galeria/${image}`}
+            src={`${basePath}${image}`}
             alt='anything'
             className={`carousel-image ${getClassName(index)}`}
           />
