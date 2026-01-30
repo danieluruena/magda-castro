@@ -3,15 +3,22 @@ import { useState } from 'react'
 import './carousel.css'
 import '../../../common.css'
 
+const IMAGE_CDN = process.env.REACT_APP_IMAGE_CDN
+
 interface CarouselProps {
   images: string[];
 }
 
+const getImagePath = (image: string): string => {
+  if (IMAGE_CDN === 'netlify') {
+    return `/.netlify/images?url=/assets/galeria/${image}`
+  }
+
+  return `/assets/galeria/${image}`
+}
+
 export const Carousel = ({ images }: CarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0)
-
-  const stage = process.env.STAGE
-  const basePath = stage === 'prod' ? '/.netlify/images?url=/assets/galeria/' : '/assets/galeria/'
 
   const nextImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
@@ -40,7 +47,7 @@ export const Carousel = ({ images }: CarouselProps) => {
         {images.map((image, index) => (
           <img
             key={index}
-            src={`${basePath}${image}`}
+            src={getImagePath(image)}
             alt='anything'
             className={`carousel-image ${getClassName(index)}`}
           />
