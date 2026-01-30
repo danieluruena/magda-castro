@@ -1,20 +1,11 @@
 
 import { useState } from 'react'
-import './carousel.css'
 import '../../../common.css'
-
-const IMAGE_CDN = process.env.REACT_APP_IMAGE_CDN
+import { getImagePath } from '../../../utils/getBasePath'
+import './carousel.css'
 
 interface CarouselProps {
   images: string[];
-}
-
-const getImagePath = (image: string): string => {
-  if (IMAGE_CDN === 'netlify') {
-    return `/.netlify/images?url=/assets/galeria/${image}`
-  }
-
-  return `/assets/galeria/${image}`
 }
 
 export const Carousel = ({ images }: CarouselProps) => {
@@ -47,7 +38,7 @@ export const Carousel = ({ images }: CarouselProps) => {
         {images.map((image, index) => (
           <img
             key={index}
-            src={getImagePath(image)}
+            src={getImagePath(`galeria/${image}`)}
             alt='anything'
             className={`carousel-image ${getClassName(index)}`}
           />
