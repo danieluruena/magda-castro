@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import './service.css'
+import { getImagePath } from '../../../../utils/getBasePath'
 
 type ServiceProps = {
   title: string;
@@ -14,7 +15,7 @@ export const Service: React.FC<ServiceProps> = ({
   return (
     <div className='service'>
       <NavLink className="image-container fade-in" to={link}>
-        <img className='service-image' src={`/assets/servicios/${imageUrl}`} alt={title} />
+        <img className='service-image' src={getImagePath(`servicios/${imageUrl}`)} alt={title} />
       </NavLink>
       <div className='service-info fade-in'>
         <h3 className='service-title fade-in'>{title}</h3>

@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import './artisticFormat.css'
+import { getImagePath } from '../../../../utils/getBasePath'
 
 type ArtisticFormatProps = {
   title: string;
@@ -14,7 +15,7 @@ export const ArtisticFormat: React.FC<ArtisticFormatProps> = ({
   return (
     <div className='artistic-format'>
       <NavLink className="image-container fade-in" to={link}>
-        <img className='artistic-format-image' src={`/assets/formatos/${imageUrl}`} alt={title} />
+        <img className='artistic-format-image' src={getImagePath(`formatos/${imageUrl}`)} alt={title} />
       </NavLink>
       <h3 className='artistic-format-title fade-in'>{title}</h3>
       <p className='artistic-format-description fade-in'>{description}</p>
