@@ -38,7 +38,6 @@
   font-family: 'Times New Roman', Times, serif;
 }
 
-
 .form {
   display: flex;
   flex-direction: column;
@@ -46,11 +45,6 @@
   font-family: 'Times New Roman', Times, serif;
 }
 
-.form-grid-two {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
 
 .form input,
 .form select,
