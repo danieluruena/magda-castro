@@ -18,8 +18,7 @@ export const Contact: React.FC = () => {
             ¿Tienes una idea que quiere hacer realidad con un estilo macabro o visceral?
           </p>
         </section>
-
-        <section className="contact-form">
+      <div className="contact-form">
           <form className="form" onSubmit={handleSubmit(send)}>
             <input type="text" placeholder="Nombre" {...register('name')} /> 
             <input type="phone" placeholder="Télefono" {...register('phone')} />
@@ -31,7 +30,7 @@ export const Contact: React.FC = () => {
 
             <button className="contact-button" type="submit">Enviar</button>
           </form>
-        </section>
+        </div>
       </div>
     </section>
   )
