@@ -1,26 +1,75 @@
 .contact {
-  padding: 60px 20px;
-  text-align: center;
+  width: 100%;
+  min-height: 70vh;
+  padding: 80px 24px;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url('../../../public/section-bg.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
 }
 
-.contact-title {
-  font-size: 32px;
-  margin-bottom: 30px;
+.contact-layout {
+  width: min(1100px, 100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
 }
 
-.contact-text {
-  font-size: 18px;
-  color: #666;
-  margin-bottom: 20px;
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-.contact-button {
-  font-size: 18px;
-  color: #007bff;
-  text-decoration: none;
-  padding: 12px 24px;
-  border: 2px solid #007bff;
-  border-radius: 4px;
-  display: inline-block;
-  transition: all 0.3s;
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  min-height: 52px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  padding: 12px 14px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  background: white;
+  color: black;
+  outline: none;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: rgba(0, 0, 0, 0.4);
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: rgba(0, 0, 0, 0.45);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+.form textarea {
+  resize: none;
+  min-height: unset;
+}
+
+@media (max-width: 768px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 }

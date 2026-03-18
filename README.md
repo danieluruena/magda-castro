@@ -19,6 +19,7 @@ Esta aplicación web está desarrollada con React y TypeScript, presentando un p
 - React 18.2.0
 - TypeScript 4.9.5
 - React Router DOM 6.8.1
+- React Hook Form 7.71.2
 - CSS3
 
 ## Instalación
