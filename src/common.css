@@ -45,3 +45,24 @@
   text-align: center;
   grid-column: 1 / -1;
 }
+
+.main-btn {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: black;
+  padding: 10px 30px;
+  border-radius: 30px;
+  margin-top: 40px;
+  display: inline-block;
+  border: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-btn:hover {
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+  padding: 7px 27px;
+}
