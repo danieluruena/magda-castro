@@ -24,7 +24,7 @@ export const Header: React.FC = () => {
                   <NavLink to="/servicios#obras-personalizadas" className="nav-link">Obras personalizadas</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/servicios#diseno-personajes-trajes" className="nav-link">Diseño de personajes y trajes</NavLink>
+                  <NavLink to="/servicios#diseno-personajes" className="nav-link">Diseño de personajes y trajes</NavLink>
                 </li>
                 <li>
                   <NavLink to="/servicios#performance-en-vivo" className="nav-link">Performance en vivo</NavLink>
