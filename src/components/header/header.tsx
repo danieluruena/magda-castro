@@ -35,8 +35,8 @@ export const Header: React.FC = () => {
               </ul>
             </li>
             <li><NavLink to="/sobre-mi" className="nav-link">Sobre mí</NavLink></li>
-            <li><NavLink to="/tienda" className="nav-link">Tienda</NavLink></li>
-            <li><NavLink to="/blog" className="nav-link">Blog</NavLink></li>
+            {/* <li><NavLink to="/tienda" className="nav-link">Tienda</NavLink></li>
+            <li><NavLink to="/blog" className="nav-link">Blog</NavLink></li> */}
             <li><NavLink to="/contacto" className="nav-link">Contacto</NavLink></li>
           </ul>
         </nav>

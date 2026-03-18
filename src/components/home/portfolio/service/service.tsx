@@ -20,7 +20,7 @@ export const Service: React.FC<ServiceProps> = ({
       <div className='service-info fade-in'>
         <h3 className='service-title fade-in'>{title}</h3>
         <p className='service-description fade-in'>{description}</p>
-        <NavLink to={link} className="service-btn fade-in">Saber más</NavLink>
+        <NavLink to={link} className="main-btn fade-in">Saber más</NavLink>
       </div>
     </div>
   )

@@ -1,6 +1,7 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import './contact.css'
+import '../../common.css'
 
 export const Contact: React.FC = () => {
   const { register, handleSubmit } = useForm()  //función para obtener info de inputs después de envio 
@@ -11,24 +12,24 @@ export const Contact: React.FC = () => {
   return (
     <section id="contact" className="contact">
       <div className="contact-layout">
-        <section className="contact-info">
-          <h3 className="contact-title">CONTÁCTANOS</h3>
-
-          <p className="contact-text">
-            ¿Tienes una idea que quiere hacer realidad con un estilo macabro o visceral?
+        <div className="contact-info">
+          <h2 className="section-title">Contáctame</h2>
+          <p className="section-description">
+            ¿Tienes una idea que quieres hacer realidad con un estilo macabro o visceral?
+            Cuéntame tu visión y la convertimos en arte.
           </p>
-        </section>
-      <div className="contact-form">
+        </div>
+        <div className="contact-form">
           <form className="form" onSubmit={handleSubmit(send)}>
-            <input type="text" placeholder="Nombre" {...register('name')} /> 
-            <input type="phone" placeholder="Télefono" {...register('phone')} />
+            <input type="text" placeholder="Nombre" {...register('name')} />
+            <input type="tel" placeholder="Teléfono" {...register('phone')} />
             <input type="email" placeholder="Email" {...register('email')} />
             <textarea
-              placeholder="Me gustaría una escultura / pintura / personaje sobre.."
+              placeholder="Me gustaría una escultura / pintura / personaje sobre…"
               rows={6}
-              {...register('message')}/>
-
-            <button className="contact-button" type="submit">Enviar</button>
+              {...register('message')}
+            />
+            <button className="main-btn" type="submit">Enviar</button>
           </form>
         </div>
       </div>
