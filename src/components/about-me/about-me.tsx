@@ -13,7 +13,7 @@ export const AboutMe: React.FC = () => {
         </div>
         <div>
           <p className="section-description">
-            La sensación de no encajar socialmente me llevo a la búsqueda del conocimiento necesario para entender cómo funcionaba el mundo, las relaciones sociales, la psicología, las religiones, la historia, etc. Esto me llevo a desarrollar una visión crítica, pesimista, cruda y hasta negativa de el mundo lo que posteriormente se convirtió en fuente de inspiración para mi arte.
+            La sensación de no encajar socialmente me llevó a la búsqueda del conocimiento necesario para entender cómo funcionaba el mundo, las relaciones sociales, la psicología, las religiones, la historia, etc. Esto me llevó a desarrollar una visión crítica, pesimista, cruda y hasta negativa del mundo lo que posteriormente se convirtió en fuente de inspiración para mi arte.
           </p><br />
           <p className="section-description">
             Tras vivir un tiempo en Bogotá empecé a desarrollar mis habilidades artísticas. Tras varios años de aprendizaje y exploración de estilos y técnicas logré encontrar lo que realmente disfruto como trabajo.
