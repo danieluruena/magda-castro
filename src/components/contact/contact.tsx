@@ -52,6 +52,7 @@ export const Contact: React.FC = () => {
             <input type="tel" placeholder="Teléfono" name='phone'/>
             <input type="email" placeholder="Email" name='email'/>
             <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
             <textarea
               placeholder="Me gustaría una escultura / pintura / personaje sobre…"
               rows={6}
