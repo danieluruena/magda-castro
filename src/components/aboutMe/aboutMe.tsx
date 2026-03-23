@@ -1,15 +1,17 @@
 import React from 'react'
-import './about-me.css'
-import '../../common.css'
 import { getImagePath } from '../../utils/getBasePath'
+import { useScrollAnimation } from '../../hooks/useScrollAnimation'
+import './aboutMe.css'
+import '../../common.css'
 
 export const AboutMe: React.FC = () => {
+  useScrollAnimation()
   return (
     <section id="about" className="about">
       <div className='about-content'>
         <h2 className="section-title">Un poco sobre mí</h2>
         <div>
-          <img src={getImagePath('sobre-mi/me-1.jpg')} alt="" className='about-image' />
+          <img src={getImagePath('sobre-mi/me-1.jpg')} alt="" className='about-image fade-in' />
         </div>
         <div>
           <p className="section-description">
@@ -29,7 +31,7 @@ export const AboutMe: React.FC = () => {
           </p>
         </div>
         <div>
-          <img src={getImagePath('sobre-mi/me-2.jpg')} alt="" className='about-image' />
+          <img src={getImagePath('sobre-mi/me-2.jpg')} alt="" className='about-image fade-in' />
         </div>
       </div>
     </section>
