@@ -33,6 +33,12 @@
   gap: 16px;
 }
 
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
 .form input,
 .form textarea {
   width: 100%;
@@ -65,6 +71,38 @@
 .form textarea {
   resize: none;
   min-height: unset;
+}
+
+.form input.error,
+.form textarea.error {
+  border-color: #dc3545;
+  border-width: 2px;
+  padding: 11px 13px;
+}
+
+.form input.error:focus,
+.form textarea.error:focus {
+  border-color: #dc3545;
+}
+
+.error-message {
+  font-size: 12px;
+  color: #dc3545;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  margin-top: 6px;
+  animation: slideInError 0.3s ease-out;
+}
+
+@keyframes slideInError {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 768px) {
