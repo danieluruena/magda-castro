@@ -1,9 +1,11 @@
+import { useHashScroll } from '../../hooks/useHashScroll'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 import { Carousel } from './carousel/carousel'
 import './gallery.css'
 
 export const Gallery = () => {
   useScrollAnimation()
+  useHashScroll()
   const makeupImages = [
     'maquillajes/1.jpg',
     'maquillajes/2.jpg', 
@@ -42,16 +44,16 @@ export const Gallery = () => {
   ]
   return (
     <>
-      <h1 className='main-title'>Galería</h1>
+      <h1 className='main-title' id='maquillaje'>Galería</h1>
       <div className='makeup'>
         <h2 className='section-title'>Maquillaje artístico y FX</h2>
         <Carousel images={makeupImages}/>
       </div>
-      <div className='sculptures'>
+      <div className='sculptures' id='esculturas'>
         <h2 className='section-title'>Esculturas</h2>
         <Carousel images={sculptureImages} />
       </div>
-      <div className='characters-and-performances'>
+      <div className='characters-and-performances' id='personajes-cosplay'>
         <h2 className='section-title'>Personajes y performances</h2>
         <Carousel images={characterAndPerformanceImages} />
       </div>

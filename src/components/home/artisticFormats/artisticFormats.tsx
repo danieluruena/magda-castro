@@ -11,7 +11,7 @@ export const ArtisticFormats: React.FC = () => {
       image: 'escultura.jpg',
       title: 'Escultura',
       description: 'Figuras que traen al plano material los conceptos que no se puede explicar con simples palabras.',
-      link: '/galeria#escultura',
+      link: '/galeria#esculturas',
     },
     {
       image: 'maquillaje.jpg',
