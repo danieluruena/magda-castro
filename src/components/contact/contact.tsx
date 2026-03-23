@@ -1,13 +1,8 @@
 import React from 'react'
-import { useForm } from 'react-hook-form'
 import './contact.css'
 import '../../common.css'
 
 export const Contact: React.FC = () => {
-  const { register, handleSubmit } = useForm()  //función para obtener info de inputs después de envio 
-  const send = (data: any) => {  //función enviar datos a backend, por ahora solo en consola -- Rev data:any
-    console.log(data)
-  }
 
   return (
     <section id="contact" className="contact">
@@ -20,14 +15,15 @@ export const Contact: React.FC = () => {
           </p>
         </div>
         <div className="contact-form">
-          <form className="form" onSubmit={handleSubmit(send)}>
-            <input type="text" placeholder="Nombre" {...register('name')} />
-            <input type="tel" placeholder="Teléfono" {...register('phone')} />
-            <input type="email" placeholder="Email" {...register('email')} />
+          <form className="form" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="text" placeholder="Nombre" name='name'/>
+            <input type="tel" placeholder="Teléfono" name='phone'/>
+            <input type="email" placeholder="Email" name='email'/>
+            <input type="hidden" name="bot-field" />
             <textarea
               placeholder="Me gustaría una escultura / pintura / personaje sobre…"
               rows={6}
-              {...register('message')}
+              name='message'
             />
             <button className="main-btn" type="submit">Enviar</button>
           </form>
