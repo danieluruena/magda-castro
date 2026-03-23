@@ -44,10 +44,8 @@ export const Contact: React.FC = () => {
             onSubmit={handleSubmit}
             method='POST'
             action='/'
-            className="form" 
-            data-netlify="true" 
-            netlify-honeypot="bot-field" 
-            form-name="contact">
+            className="form"
+            name="contact">
             <input type="text" placeholder="Nombre" name='name'/>
             <input type="tel" placeholder="Teléfono" name='phone'/>
             <input type="email" placeholder="Email" name='email'/>
