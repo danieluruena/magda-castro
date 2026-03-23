@@ -3,7 +3,27 @@ import './contact.css'
 import '../../common.css'
 
 export const Contact: React.FC = () => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
 
+    const form = e.currentTarget
+    const data = new FormData(form)
+    const encoded = new URLSearchParams(data as any).toString()
+
+    try {
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encoded,
+      })
+
+      console.log('Mensaje enviado correctamente')
+      form.reset()
+    } catch (error) {
+      console.error(error)
+    }
+  }
+  
   return (
     <section id="contact" className="contact">
       <div className="contact-layout">
@@ -15,7 +35,12 @@ export const Contact: React.FC = () => {
           </p>
         </div>
         <div className="contact-form">
-          <form className="form" data-netlify="true" netlify-honeypot="bot-field">
+          <form 
+            onSubmit={handleSubmit}
+            className="form" 
+            data-netlify="true" 
+            netlify-honeypot="bot-field" 
+            form-name="contact">
             <input type="text" placeholder="Nombre" name='name'/>
             <input type="tel" placeholder="Teléfono" name='phone'/>
             <input type="email" placeholder="Email" name='email'/>
