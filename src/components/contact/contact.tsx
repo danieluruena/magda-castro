@@ -11,11 +11,16 @@ export const Contact: React.FC = () => {
     const encoded = new URLSearchParams(data as any).toString()
 
     try {
-      await fetch('/', {
+      const response = await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: encoded,
       })
+
+      if (!response.ok) {
+        console.error(`Error al enviar el mensaje: ${response.statusText}`)
+        throw new Error('Error al enviar el mensaje')
+      }
 
       console.log('Mensaje enviado correctamente')
       form.reset()
@@ -37,6 +42,8 @@ export const Contact: React.FC = () => {
         <div className="contact-form">
           <form 
             onSubmit={handleSubmit}
+            method='POST'
+            action='/'
             className="form" 
             data-netlify="true" 
             netlify-honeypot="bot-field" 
