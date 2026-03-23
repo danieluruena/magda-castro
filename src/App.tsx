@@ -2,7 +2,7 @@ import React from 'react'
 import {
  BrowserRouter as Router, Routes, Route, 
 } from 'react-router-dom'
-import { AboutMe } from './components/about-me/about-me'
+import { AboutMe } from './components/aboutMe/aboutMe'
 import { Services } from './components/services/services'
 import { Contact } from './components/contact/contact'
 import { Home } from './components/home/home'
