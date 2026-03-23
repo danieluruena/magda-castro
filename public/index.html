@@ -26,14 +26,11 @@
 
 <body>
   <div id="root"></div>
-  <form className="form" netlify netlify-honeypot="bot-field" form-name="contact" hidden>
+  <form className="form" netlify netlify-honeypot="bot-field" name="contact" hidden>
     <input type="text" placeholder="Nombre" name='name' />
     <input type="tel" placeholder="Teléfono" name='phone' />
     <input type="email" placeholder="Email" name='email' />
-    <input type="hidden" name="bot-field" />
-    <input type="hidden" name="form-name" value="contact" />
     <textarea placeholder="Me gustaría una escultura / pintura / personaje sobre…" rows={6} name='message' />
-    <button className="main-btn" type="submit">Enviar</button>
   </form>
 </body>
 
