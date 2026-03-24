@@ -5,20 +5,56 @@
 
 .logo {
   margin-bottom: 20px;
-  width: 15%;
+  width: 100%;
   height: auto;
-  width: 280px;
+  max-width: 280px;
 }
 
 .logo-link {
-  width: 15%;
+  width: auto;
   align-self: center;
   justify-self: center;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 20;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  transition: all 0.3s linear;
+  transform-origin: 1px;
+}
+
+.hamburger-open span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.hamburger-open span:nth-child(2) {
+  transform: translate(100%);
+  opacity: 0;
+}
+
+.hamburger-open span:nth-child(3) {
+  transform: rotate(-45deg);
 }
 
 .nav {
   display: flex;
   justify-content: center;
+}
+
+.nav-logo {
+  display: none;
 }
 
 .nav-list {

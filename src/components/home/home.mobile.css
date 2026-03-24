@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+  .presentation-title {
+    font-size: 50px;
+    max-width: 90vw;
+  }
+
+  .presentation-description {
+    font-size: 18px;
+    max-width: 90vw;
+  }
+}

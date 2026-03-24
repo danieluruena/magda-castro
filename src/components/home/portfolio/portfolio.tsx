@@ -2,6 +2,7 @@ import { useScrollAnimation } from '../../../hooks/useScrollAnimation'
 import { Service } from './service/service'
 import '../../../common.css'
 import './portfolio.css'
+import './portfolio.mobile.css'
 
 
 export const Portfolio: React.FC = () => {

@@ -1,4 +1,5 @@
 import './artisticFormats.css'
+import './artisticFormats.mobile.css'
 import '../../../common.css'
 import { ArtisticFormat } from './artisticFormat/artisticFormat'
 import { useScrollAnimation } from '../../../hooks/useScrollAnimation'
