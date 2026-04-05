@@ -1,0 +1,109 @@
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contact {
+    padding: 72px 32px;
+  }
+
+  .contact-layout {
+    width: min(960px, 100%);
+    gap: 48px;
+  }
+
+  .contact-info {
+    gap: 20px;
+  }
+
+  .contact .section-title {
+    font-size: 2.5rem;
+    line-height: 1.1;
+  }
+
+  .contact .section-description {
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+
+  .contact .form {
+    gap: 14px;
+  }
+
+  .contact .form textarea {
+    min-height: 180px;
+  }
+
+  .contact .main-btn {
+    margin-top: 28px;
+  }
+
+  .modal-content {
+    max-width: 460px;
+    padding: 48px 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    min-height: auto;
+    padding: 56px 20px;
+    align-items: flex-start;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-info {
+    gap: 16px;
+    text-align: center;
+  }
+
+  .contact .section-title {
+    font-size: 2.25rem;
+    line-height: 1.1;
+  }
+
+  .contact .section-description {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact .form {
+    gap: 14px;
+  }
+
+  .contact .form input,
+  .contact .form textarea {
+    font-size: 16px;
+  }
+
+  .contact .form textarea {
+    min-height: 160px;
+  }
+
+  .contact .main-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px 24px;
+    font-size: 1rem;
+  }
+
+  .contact .error-message {
+    font-size: 0.75rem;
+  }
+
+  .modal-content {
+    padding: 40px 24px;
+  }
+
+  .modal-title {
+    font-size: 28px;
+  }
+
+  .modal-message {
+    font-size: 14px;
+  }
+}

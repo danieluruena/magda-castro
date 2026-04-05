@@ -1,13 +1,56 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './contact.css'
+import './contact.responsive.css'
 import '../../common.css'
-import { SubmitModal } from './submitModal/submitModal'
 
 type FieldErrors = {
   name?: boolean
   phone?: boolean
   email?: boolean
   message?: boolean
+}
+
+interface ContactSuccessModalProps {
+  isOpen: boolean
+  onClose: () => void
+}
+
+const ContactSuccessModal: React.FC<ContactSuccessModalProps> = ({ isOpen, onClose }) => {
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [isOpen])
+
+  const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (e.target === e.currentTarget) {
+      onClose()
+    }
+  }
+
+  if (!isOpen) {
+    return null
+  }
+
+  return (
+    <div className="modal-backdrop" onClick={handleBackdropClick}>
+      <div className="modal-content">
+        <h2 className="modal-title">Â¡Mensaje Enviado!</h2>
+        <p className="modal-message">
+          Gracias por contactarme. He recibido tu mensaje y me pondrÃ© en contacto pronto.
+        </p>
+        <button className="modal-btn" type="button" onClick={onClose}>
+          Cerrar
+        </button>
+      </div>
+    </div>
+  )
 }
 
 export const Contact: React.FC = () => {
@@ -143,7 +186,7 @@ export const Contact: React.FC = () => {
           </div>
         </div>
       </section>
-      <SubmitModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      <ContactSuccessModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   )
 }
