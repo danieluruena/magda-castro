@@ -2,6 +2,7 @@ import { useHashScroll } from '../../hooks/useHashScroll'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 import { Carousel } from './carousel/carousel'
 import './gallery.css'
+import './gallery.mobile.css'
 
 export const Gallery = () => {
   useScrollAnimation()
