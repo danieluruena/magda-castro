@@ -33,11 +33,9 @@ export const Carousel = ({ images }: CarouselProps) => {
   }
 
   const openModal = () => {
-    // setScrollPosition(window.scrollY || window.pageYOffset)
     setIsModalOpen(true)
     document.body.style.overflow = 'hidden'
     document.documentElement.style.overflow = 'hidden'
-    // window.scrollTo(0, 0)
   }
 
   const closeModal = () => {
@@ -47,7 +45,6 @@ export const Carousel = ({ images }: CarouselProps) => {
       setIsModalClosing(false)
       document.body.style.overflow = ''
       document.documentElement.style.overflow = ''
-      // window.scrollTo(0, scrollPosition)
     }, 300)
   }
 
