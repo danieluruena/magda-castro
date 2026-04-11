@@ -2,10 +2,14 @@
   .presentation-title {
     font-size: 50px;
     max-width: 90vw;
+    margin-left: 20px;
+    text-align: center;
   }
 
   .presentation-description {
     font-size: 18px;
     max-width: 90vw;
+    margin-left: 20px;
+    text-align: center;
   }
 }

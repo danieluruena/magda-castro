@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+  .artistic-format-image {
+    height: 35vh;
+    margin: 0;
+  }
+
+  .artistic-format-title {
+    font-size: 28px;
+    margin: 12px 0 8px;
+  }
+}

@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+  .work-title {
+    font-size: 28px;
+  }
+
+  .work-video {
+    height: 100vw;
+  }
+
+  .work-description {
+    font-size: 18px;
+  }
+}
