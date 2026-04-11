@@ -1,0 +1,8 @@
+@media (max-width: 768px) {
+  .artistic-formats {
+    background-attachment: scroll;
+    padding: 40px 5%;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}

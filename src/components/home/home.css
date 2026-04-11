@@ -1,15 +1,14 @@
 .presentation {
-  padding: 80px 0;
-  z-index: 10;
   position: relative;
   display: grid;
-  grid-template-rows: 171px auto;
-  grid-template-columns: 493px auto;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 493px;
   justify-content: left;
-  gap: 30px;
+  align-items: center;
   color: white;
   max-width: 1224px;
   width: 100%;
+  height: 35vh;
 }
 
 .presentation-title {
