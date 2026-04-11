@@ -1,0 +1,31 @@
+@media (max-width: 768px) {
+  .service-detail {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 40px 0;
+  }
+
+  .service-detail .service-image {
+    height: 80vw;
+    margin-bottom: 20px;
+  }
+
+  .service-detail-title {
+    text-align: center;
+  }
+
+  .service-detail-description {
+    text-align: justify;
+  }
+
+  .service-detail-list {
+    list-style-type: none;
+    text-align: center;
+  }
+
+  .service-detail-cta {
+    align-self: center;
+    width: 100%;
+    text-align: center;
+  }
+}

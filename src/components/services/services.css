@@ -1,11 +1,10 @@
-.services-page {
+.services {
   background-color: black;
   color: white;
   min-height: 100vh;
 }
 
 .services-hero {
-  padding: 100px 8% 60px;
   text-align: center;
 }
 

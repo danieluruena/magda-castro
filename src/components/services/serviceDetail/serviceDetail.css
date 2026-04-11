@@ -14,12 +14,12 @@
   direction: ltr;
 }
 
-.service-detail__image-wrapper {
+.service-image-container {
   overflow: hidden;
   border-radius: 20px;
 }
 
-.service-detail__image {
+.service-detail .service-image {
   width: 100%;
   height: 50vw;
   max-height: 520px;
@@ -29,18 +29,18 @@
   transition: transform 0.4s ease, filter 0.4s ease;
 }
 
-.service-detail__image-wrapper:hover .service-detail__image {
+.service-image-container:hover .service-image {
   transform: scale(0.97);
   filter: brightness(0.75);
 }
 
-.service-detail__content {
+.service-content {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.service-detail__title {
+.service-detail-title {
   font-family: 'Cormorant Garamond', serif;
   font-size: 52px;
   font-weight: 400;
@@ -49,7 +49,7 @@
   margin: 0;
 }
 
-.service-detail__description {
+.service-detail-description {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   font-weight: 300;
@@ -58,7 +58,7 @@
   margin: 0;
 }
 
-.service-detail__list {
+.service-detail-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -68,7 +68,7 @@
   list-style-type: disc;
 }
 
-.service-detail__list-item {
+.service-detail-list-item {
   font-family: 'Raleway', sans-serif;
   font-size: 17px;
   font-weight: 300;
@@ -77,7 +77,7 @@
   position: relative;
 }
 
-.service-detail__cta {
+.service-detail-cta {
   display: inline-block;
   align-self: flex-start;
   text-decoration: none;
@@ -92,7 +92,7 @@
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.service-detail__cta:hover {
+.service-detail-cta:hover {
   background-color: white;
   color: black;
   border-color: white;
