@@ -1,0 +1,13 @@
+@media (max-width: 1200px) {
+  .makeup {
+    background-attachment: unset;
+  }
+
+  .sculptures {
+    background-attachment: unset;
+  }
+
+  .characters-and-performances {
+    background-attachment: unset;
+  }
+}
