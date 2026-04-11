@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import { getImagePath } from '../../../utils/getBasePath'
 import './serviceDetail.css'
+import './serviceDetail.mobile.css'
 
 type ServiceDetailProps = {
   id: string
@@ -16,18 +17,18 @@ export const ServiceDetail: React.FC<ServiceDetailProps> = ({
 }) => {
   return (
     <article id={id} className={`service-detail ${reversed ? 'service-detail--reversed' : ''}`}>
-      <div className="service-detail__image-wrapper fade-in">
-        <img src={getImagePath(`servicios/${imageUrl}`)} alt={title} className="service-detail__image" />
+      <div className="service-image-container fade-in">
+        <img src={getImagePath(`servicios/${imageUrl}`)} alt={title} className="service-image" />
       </div>
-      <div className="service-detail__content fade-in">
-        <h2 className="service-detail__title">{title}</h2>
-        <p className="service-detail__description">{description}</p>
-        <ul className="service-detail__list">
+      <div className="service-content">
+        <h2 className="service-detail-title">{title}</h2>
+        <p className="service-detail-description">{description}</p>
+        <ul className="service-detail-list">
           {details.map((item) => (
-            <li key={item} className="service-detail__list-item">{item}</li>
+            <li key={item} className="service-detail-list-item">{item}</li>
           ))}
         </ul>
-        <NavLink to="/contacto" className="service-detail__cta">Solicitar información</NavLink>
+        <NavLink to="/contacto" className="service-detail-cta">Solicitar información</NavLink>
       </div>
     </article>
   )
