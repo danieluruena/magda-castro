@@ -1,4 +1,5 @@
 import './footer.css'
+import './footer.mobile.css'
 
 export const Footer: React.FC = () => {
   return (
