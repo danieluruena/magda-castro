@@ -1,5 +1,6 @@
 import React from 'react'
 import './home.css'
+import './home.mobile.css'
 import '../../common.css'
 import { ArtisticFormats } from './artisticFormats/artisticFormats'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'

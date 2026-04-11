@@ -2,6 +2,7 @@ import { useScrollAnimation } from '../../../hooks/useScrollAnimation'
 import { Service } from './service/service'
 import '../../../common.css'
 import './portfolio.css'
+import './portfolio.mobile.css'
 
 
 export const Portfolio: React.FC = () => {
@@ -35,8 +36,8 @@ export const Portfolio: React.FC = () => {
   ]
   return (
     <section className="portfolio">
-      <h2 className="section-title fade-in">Portafolio de servicios</h2>
-      <p className="section-description fade-in">Puedo traer a este mundo esas ideas que trascienden lo siniestro y desgarrador de nuestra mente.</p>
+      <h2 className="section-title">Portafolio de servicios</h2>
+      <p className="section-description">Puedo traer a este mundo esas ideas que trascienden lo siniestro y desgarrador de nuestra mente.</p>
       {services.map((service) => {
         return <Service key={service.title} {...service} />
       })}

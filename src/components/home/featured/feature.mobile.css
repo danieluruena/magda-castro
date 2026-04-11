@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+  .featured-works {
+    gap: 20px;
+    padding: 40px 0;
+  }
+
+  .works-container {
+    width: 90%;
+  }
+}

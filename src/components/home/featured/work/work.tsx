@@ -1,5 +1,6 @@
 import '../../../../common.css'
 import './work.css'
+import './work.mobile.css'
 
 export type WorkProps = {
   title: string

@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+  .service-image {
+    height: 35vh;
+  }
+  
+  .service-info {
+    padding: 20px;
+  }
+
+  .service-title {
+    font-size: 28px;
+  }
+
+  .service-description {
+    font-size: 18px;
+  }
+}
