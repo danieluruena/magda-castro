@@ -1,0 +1,45 @@
+@media (max-width: 1200px) {
+  .carousel-image.prev {
+    opacity: 0;
+  }
+
+  .carousel-image.next {
+    opacity: 0;
+  }
+  
+  .carousel-image {
+    width: 100%;
+  }
+
+  .carousel {
+    width: 100%;
+    overflow: visible;
+  }
+
+  .prev-btn {
+    left: -20px;
+  }
+
+  .next-btn {
+    right: -20px;
+  }
+
+  .carousel-modal {
+    position: fixed;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    touch-action: none;
+  }
+
+  .carousel-modal-image {
+    max-width: 95%;
+    max-height: 95%;
+    width: auto;
+    height: auto;
+  }
+}
