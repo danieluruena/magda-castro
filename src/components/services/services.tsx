@@ -4,6 +4,7 @@ import { useHashScroll } from '../../hooks/useHashScroll'
 import { ServiceDetail } from './serviceDetail/serviceDetail'
 import '../../common.css'
 import './services.css'
+import './services.mobile.css'
 
 const services = [
   {
@@ -63,11 +64,11 @@ export const Services: React.FC = () => {
   useHashScroll()
 
   return (
-    <main className="services-page">
-      <header className="services-hero fade-in">
+    <main className="services">
+      <div className="services-hero fade-in">
         <h1 className="main-title">Servicios</h1>
         <p className="section-description">Cada proyecto es un universo propio. Aquí encontrarás las formas en que podemos trabajar juntos.</p>
-      </header>
+      </div>
       {services.map((service) => (
         <ServiceDetail key={service.id} {...service} />
       ))}
