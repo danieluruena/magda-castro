@@ -1,8 +1,9 @@
 import React from 'react'
 import { getImagePath } from '../../utils/getBasePath'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
-import './aboutMe.css'
 import '../../common.css'
+import './aboutMe.css'
+import './aboutMe.mobile.css'
 
 export const AboutMe: React.FC = () => {
   useScrollAnimation()
