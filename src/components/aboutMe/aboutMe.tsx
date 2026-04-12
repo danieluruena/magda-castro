@@ -2,6 +2,7 @@ import React from 'react'
 import { getImagePath } from '../../utils/getBasePath'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 import './aboutMe.css'
+import './aboutMe.responsive.css'
 import '../../common.css'
 
 export const AboutMe: React.FC = () => {
