@@ -11,6 +11,8 @@ import { Gallery } from './components/gallery/gallery'
 import { Store } from './components/store/store'
 import { Blog } from './components/blog/blog'
 import { Footer } from './components/footer/footer'
+import { WhatsAppButton } from './components/whatsappButton/whatsappButton'
+import { ScrollToTopButton } from './components/scrollToTopButton/scrollToTopButton'
 import './App.css'
 
 const App: React.FC = () => {
@@ -29,6 +31,8 @@ const App: React.FC = () => {
         </Routes>
       </div>
       <Footer />
+      <ScrollToTopButton />
+      <WhatsAppButton />
     </Router>
 
   )
