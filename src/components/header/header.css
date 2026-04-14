@@ -3,11 +3,16 @@
   text-align: center;
 }
 
+.with-bg {
+  background-image: url('../../../public/assets/fondo_rojo.jpg');
+}
+
 .logo {
   margin-bottom: 20px;
   width: 100%;
   height: auto;
   max-width: 280px;
+  filter: drop-shadow(3px 3px 3px #000);
 }
 
 .logo-link {
@@ -76,6 +81,7 @@
   position: relative;
   align-self: center;
   display: block;
+  text-shadow: 3px 3px 3px #000;
 }
 
 .nav-link:hover, .active {
