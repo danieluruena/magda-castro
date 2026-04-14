@@ -1,6 +1,7 @@
 import React from 'react'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 import { useHashScroll } from '../../hooks/useHashScroll'
+import { useMetaTags } from '../../hooks/useMetaTags'
 import { ServiceDetail } from './serviceDetail/serviceDetail'
 import '../../common.css'
 import './services.css'
@@ -62,6 +63,12 @@ const services = [
 export const Services: React.FC = () => {
   useScrollAnimation()
   useHashScroll()
+  useMetaTags({
+    title: 'Servicios Artísticos Customizados | Escultura, Maquillaje, Performance',
+    description: 'Servicios de arte personalizados: obras únicas, diseño de personajes, performance en vivo, talleres y charlas. Especializada en arte oscuro y psicológico.',
+    image: 'https://magdacastro.com/assets/sobre-mi/me-1.jpg',
+    url: 'https://magdacastro.com/servicios',
+  })
 
   return (
     <main className="services">

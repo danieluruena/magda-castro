@@ -1,5 +1,6 @@
 import { useHashScroll } from '../../hooks/useHashScroll'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
+import { useMetaTags } from '../../hooks/useMetaTags'
 import { Carousel } from './carousel/carousel'
 import './gallery.css'
 import './gallery.mobile.css'
@@ -7,6 +8,12 @@ import './gallery.mobile.css'
 export const Gallery = () => {
   useScrollAnimation()
   useHashScroll()
+  useMetaTags({
+    title: 'Galería | Escultura, Maquillaje FX, Personajes | Magda Castro',
+    description: 'Galería de trabajos artísticos: escultura macabra, maquillaje artístico FX y diseño de personajes góticos. Obras oscuras e impactantes.',
+    image: 'https://magdacastro.com/assets/galeria/esculturas/1.jpg',
+    url: 'https://magdacastro.com/galeria',
+  })
   const makeupImages = [
     'maquillajes/1.jpg',
     'maquillajes/2.jpg', 
