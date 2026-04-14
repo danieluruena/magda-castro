@@ -1,12 +1,19 @@
 import React from 'react'
 import { getImagePath } from '../../utils/getBasePath'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
+import { useMetaTags } from '../../hooks/useMetaTags'
 import '../../common.css'
 import './aboutMe.css'
 import './aboutMe.mobile.css'
 
 export const AboutMe: React.FC = () => {
   useScrollAnimation()
+  useMetaTags({
+    title: 'Sobre Mí | Artista de Arte Macabro | Magda Castro',
+    description: 'Artista especializada en arte macabro y psicológico basada en Medellín. Crea esculturas, performances y personajes góticos con una visión crítica y transgresora.',
+    image: 'https://magdacastro.com/assets/sobre-mi/me-1.jpg',
+    url: 'https://magdacastro.com/sobre-mi',
+  })
   return (
     <section id="about" className="about">
       <div className='about-content'>
