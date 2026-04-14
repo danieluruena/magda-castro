@@ -35,6 +35,7 @@
   font-family: 'Cormorant Garamond', serif;
   text-align: center;
   grid-column: 1 / -1;
+  color: #d7a36eff;
 }
 
 .section-description {
@@ -44,6 +45,7 @@
   font-weight: 300;
   text-align: center;
   grid-column: 1 / -1;
+  color: #d7a36eff;
 }
 
 .main-btn {
