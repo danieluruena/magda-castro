@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 90% 10%;
   align-items: center;
-  color: black;
+  color: #d7a36eff;
 }
 
 .image-container {
@@ -46,7 +46,7 @@
   grid-row: 2 / 3;
   grid-column: 2 / 3;
   text-decoration: none;
-  color: black;
+  color: #d7a36eff;
   font-size: 32px;
   font-weight: 400;
 }

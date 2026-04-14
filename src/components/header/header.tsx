@@ -21,7 +21,7 @@ export const Header: React.FC = () => {
     <header className="header">
       <div className="header-content">
         <NavLink className="logo-link" to="/" onClick={() => setIsMenuOpen(false)}>
-          <img src="assets/logo_blanco.png" alt="Magda Castro" className="logo" />
+          <img src="assets/logo-dorado.png" alt="Magda Castro" className="logo" />
         </NavLink>
         <button className={`hamburger ${isMenuOpen ? 'hamburger-open' : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Menu">
           <span></span>
@@ -30,7 +30,7 @@ export const Header: React.FC = () => {
         </button>
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
           <div className="nav-logo">
-            <img src="assets/logo_blanco.png" alt="Magda Castro" />
+            <img src="assets/logo-dorado.png" alt="Magda Castro" />
           </div>
           <ul className="nav-list">
             <li><NavLink to="/" className="nav-link" onClick={() => setIsMenuOpen(false)}>Inicio</NavLink></li>
