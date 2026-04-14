@@ -5,10 +5,11 @@
   grid-template-columns: 493px;
   justify-content: left;
   align-items: center;
-  color: white;
+  color: #d7a36eff;
   max-width: 1224px;
   width: 100%;
   height: 35vh;
+  text-shadow: 3px 3px 3px #000;
 }
 
 .presentation-title {

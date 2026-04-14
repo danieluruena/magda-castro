@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom'
 import { getImagePath } from '../../../utils/getBasePath'
 import './serviceDetail.css'
 import './serviceDetail.mobile.css'
+import '../../../common.css'
 
 type ServiceDetailProps = {
   id: string
@@ -28,7 +29,7 @@ export const ServiceDetail: React.FC<ServiceDetailProps> = ({
             <li key={item} className="service-detail-list-item">{item}</li>
           ))}
         </ul>
-        <NavLink to="/contacto" className="service-detail-cta">Solicitar información</NavLink>
+        <NavLink to="/contacto" className="main-btn">Solicitar información</NavLink>
       </div>
     </article>
   )

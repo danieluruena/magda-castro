@@ -1,6 +1,6 @@
 .footer {
   background-color: black;
-  color: white;
+  color: #d7a36eff;
   display: grid;
   justify-items: center;
   text-align: center;
@@ -31,5 +31,5 @@
 .footer-link {
   text-decoration: none;
   font-size: 54px;
-  color: white;
+  color: #d7a36eff;
 }

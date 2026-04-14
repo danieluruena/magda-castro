@@ -1,23 +1,27 @@
-.main-title {
-  color: white;
-  margin-bottom: 40px;
+.gallery {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../../public/assets/fondo_oscuro.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 40px 0;
+  color: #d7a36eff;
 }
 
+.main-title {
+  color: #d7a36eff;
+  margin-bottom: 40px;
+}
 
 .makeup {
   padding: 40px;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../../public/assets/section-bg.png');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   display: grid;
   gap: 40px;
   justify-items: center;
 }
 
 .sculptures {
-  color: white;
   padding: 40px;
   width: 100%;
   display: grid;
@@ -28,10 +32,6 @@
 .characters-and-performances {
   padding: 40px;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../../public/assets/section-bg.png');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   display: grid;
   gap: 40px;
   justify-items: center;

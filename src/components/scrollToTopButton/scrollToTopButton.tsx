@@ -37,7 +37,7 @@ export const ScrollToTopButton: React.FC = () => {
         height="24"
         viewBox="0 0 24 24"
         fill="none"
-        stroke="white"
+        stroke="#d7a36eff"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 import './header.css'
 import './header.mobile.css'
@@ -9,6 +9,7 @@ export const Header: React.FC = () => {
   useScrollAnimation()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false)
+  const location = useLocation()
 
   const handleServicesClick = (e: React.MouseEvent) => {
     if (window.innerWidth <= 768) {
@@ -17,11 +18,13 @@ export const Header: React.FC = () => {
     }
   }
 
+  const headerClass = location.pathname !== '/' ? 'header with-bg' : 'header'
+
   return (
-    <header className="header">
+    <header className={headerClass}>
       <div className="header-content">
         <NavLink className="logo-link" to="/" onClick={() => setIsMenuOpen(false)}>
-          <img src="assets/logo_blanco.png" alt="Magda Castro" className="logo" />
+          <img src="assets/logo-dorado.png" alt="Magda Castro" className="logo" />
         </NavLink>
         <button className={`hamburger ${isMenuOpen ? 'hamburger-open' : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Menu">
           <span></span>
@@ -30,7 +33,7 @@ export const Header: React.FC = () => {
         </button>
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
           <div className="nav-logo">
-            <img src="assets/logo_blanco.png" alt="Magda Castro" />
+            <img src="assets/logo-dorado.png" alt="Magda Castro" />
           </div>
           <ul className="nav-list">
             <li><NavLink to="/" className="nav-link" onClick={() => setIsMenuOpen(false)}>Inicio</NavLink></li>
