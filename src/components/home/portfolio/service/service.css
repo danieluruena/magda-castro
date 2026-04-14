@@ -24,8 +24,8 @@
 }
 
 .service-info {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: #d7a36eff;
   text-align: center;
   padding: 40px;
   width: 80%;
@@ -34,6 +34,7 @@
   border-radius: 20px;
   min-height: 315px;
   z-index: 10;
+  border: solid 3px #d7a36eff;
 }
 
 .service-title {

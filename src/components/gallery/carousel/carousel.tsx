@@ -96,10 +96,10 @@ export const Carousel = ({ images, category = 'personajes_y_performances' }: Car
         </div>
         
         <button className="carousel-btn prev-btn" onClick={prevImage}>
-          ‹
+          <i className="fa-solid fa-arrow-left"></i>
         </button>
         <button className="carousel-btn next-btn" onClick={nextImage}>
-          ›
+          <i className="fa-solid fa-arrow-right"></i>
         </button>
       </div>
 

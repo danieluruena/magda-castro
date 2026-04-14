@@ -4,13 +4,12 @@
   padding: 80px 24px;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url('../../../public/section-bg.png');
+    url('../../../public/assets/fondo_oscuro.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
 }
 
 .contact-layout {

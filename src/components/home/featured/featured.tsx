@@ -1,7 +1,7 @@
 import { useScrollAnimation } from '../../../hooks/useScrollAnimation'
 import { Work } from './work/work'
 import './featured.css'
-import './feature.mobile.css'
+import './featured.mobile.css'
 
 export const Featured: React.FC = () => {
   useScrollAnimation()

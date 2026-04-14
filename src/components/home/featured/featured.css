@@ -1,5 +1,5 @@
 .featured-works {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../../../public/assets/section-bg.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../../../public/assets/fondo_rojo.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -9,9 +9,9 @@
   gap: 60px;
   justify-content: center;
   align-items: start;
-  margin: 26px auto;
   z-index: 10;
   justify-items: center;
+  color: #d7a36eff
 }
 
 .works-container {

@@ -45,7 +45,6 @@
   font-size: 52px;
   font-weight: 400;
   line-height: 1.15em;
-  color: white;
   margin: 0;
 }
 
@@ -54,7 +53,6 @@
   font-size: 20px;
   font-weight: 300;
   line-height: 1.7em;
-  color: rgba(255, 255, 255, 0.75);
   margin: 0;
 }
 
@@ -72,28 +70,10 @@
   font-family: 'Raleway', sans-serif;
   font-size: 17px;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.65);
   padding-left: 20px;
   position: relative;
 }
 
-.service-detail-cta {
-  display: inline-block;
-  align-self: flex-start;
-  text-decoration: none;
-  color: white;
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  padding: 12px 36px;
-  border-radius: 30px;
-  margin-top: 8px;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-.service-detail-cta:hover {
-  background-color: white;
-  color: black;
-  border-color: white;
+.main-btn {
+  width: fit-content;
 }

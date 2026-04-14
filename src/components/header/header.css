@@ -3,11 +3,16 @@
   text-align: center;
 }
 
+.with-bg {
+  background-image: url('../../../public/assets/fondo_rojo.jpg');
+}
+
 .logo {
   margin-bottom: 20px;
   width: 100%;
   height: auto;
   max-width: 280px;
+  filter: drop-shadow(3px 3px 3px #000);
 }
 
 .logo-link {
@@ -30,7 +35,7 @@
 .hamburger span {
   width: 25px;
   height: 3px;
-  background: white;
+  background: #d7a36eff;
   transition: all 0.3s linear;
   transform-origin: 1px;
   box-shadow: black 0px 2px 5px;
@@ -69,17 +74,18 @@
 
 .nav-link {
   text-decoration: none;
-  color: white;
+  color: #d7a36eff;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5em;
   position: relative;
   align-self: center;
   display: block;
+  text-shadow: 3px 3px 3px #000;
 }
 
 .nav-link:hover, .active {
-  color: rgb(184, 192, 204);
+  color: rgb(167, 126, 85);
 }
 
 .header-content {
@@ -134,7 +140,7 @@
 }
 
 .submenu .nav-link {
-  color: white;
+  color: #d7a36eff;
   font-size: 16px;
   text-align: left;
   width: 100%;
@@ -145,6 +151,6 @@
 }
 
 .submenu .nav-link:hover, .submenu .active {
-  color: rgb(184, 192, 204);
+  color: rgb(167, 126, 85);
   background: rgba(255,255,255,0.1);
 }
