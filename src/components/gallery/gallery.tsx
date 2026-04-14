@@ -55,15 +55,15 @@ export const Gallery = () => {
       <h1 className='main-title' id='maquillaje'>Galería</h1>
       <div className='makeup'>
         <h2 className='section-title'>Maquillaje artístico y FX</h2>
-        <Carousel images={makeupImages}/>
+        <Carousel images={makeupImages} category="maquillajes" />
       </div>
       <div className='sculptures' id='esculturas'>
         <h2 className='section-title'>Esculturas</h2>
-        <Carousel images={sculptureImages} />
+        <Carousel images={sculptureImages} category="esculturas" />
       </div>
       <div className='characters-and-performances' id='personajes-cosplay'>
         <h2 className='section-title'>Personajes y performances</h2>
-        <Carousel images={characterAndPerformanceImages} />
+        <Carousel images={characterAndPerformanceImages} category="personajes_y_performances" />
       </div>
     </>
   )

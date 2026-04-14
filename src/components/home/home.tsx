@@ -5,9 +5,9 @@ import '../../common.css'
 import { ArtisticFormats } from './artisticFormats/artisticFormats'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 import { useMetaTags } from '../../hooks/useMetaTags'
+import { LazyVideo } from '../common/LazyVideo'
 import { Portfolio } from './portfolio/portfolio'
 import { Featured } from './featured/featured'
-import { getImagePath } from '../../utils/getBasePath'
 
 export const Home: React.FC = () => {
   useScrollAnimation()
@@ -20,8 +20,7 @@ export const Home: React.FC = () => {
   return (
     <>
       <div className="video-container">
-        <video className="bg-video" autoPlay muted loop src={getImagePath('vbg.mp4')}>
-        </video>
+        <LazyVideo src='vbg.mp4' className='bg-video' />
       </div>
       <section className="presentation">
         <h2 className="presentation-title fade-in">

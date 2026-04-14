@@ -1,15 +1,16 @@
 
 import { useState, useEffect } from 'react'
-import { getImagePath } from '../../../utils/getBasePath'
+import { LazyImage } from '../../common/LazyImage'
 import '../../../common.css'
 import './carousel.css'
 import './carousel.mobile.css'
 
 interface CarouselProps {
-  images: string[];
+  images: string[]
+  category?: 'maquillajes' | 'esculturas' | 'personajes_y_performances'
 }
 
-export const Carousel = ({ images }: CarouselProps) => {
+export const Carousel = ({ images, category = 'personajes_y_performances' }: CarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [isModalClosing, setIsModalClosing] = useState(false)
@@ -66,18 +67,30 @@ export const Carousel = ({ images }: CarouselProps) => {
 
   if (!images.length) return null
 
+  // Mapeo de descripciones por categoría
+  const getCategoryDescription = (cat: string) => {
+    const descriptions: Record<string, string> = {
+      maquillajes: 'Maquillaje artístico y FX gótico por Magda Castro',
+      esculturas: 'Escultura macabra y conceptual por Magda Castro',
+      personajes_y_performances: 'Personaje gótico y diseño FX por Magda Castro',
+    }
+    return descriptions[cat] || 'Obra artística por Magda Castro'
+  }
+
+  const categoryDescription = getCategoryDescription(category)
+
   return (
     <>
       <div className="carousel fade-in">
         <div className="carousel-container">
           {images.map((image, index) => (
-            <img
+            <LazyImage
               key={index}
-              src={getImagePath(`galeria/${image}`)}
-              alt='anything'
+              src={`galeria/${image}`}
+              alt={`${categoryDescription} - ${index + 1}`}
               className={`carousel-image ${getClassName(index)}`}
-              onClick={index === currentIndex ? openModal : undefined}
               style={{ cursor: index === currentIndex ? 'pointer' : 'default' }}
+              onClick={index === currentIndex ? openModal : undefined}
             />
           ))}
         </div>
@@ -92,9 +105,9 @@ export const Carousel = ({ images }: CarouselProps) => {
 
       {isModalOpen && (
         <div className={`carousel-modal ${isModalClosing ? 'closing' : ''}`} onClick={closeModal}>
-          <img
-            src={getImagePath(`galeria/${images[currentIndex]}`)}
-            alt='anything'
+          <LazyImage
+            src={`galeria/${images[currentIndex]}`}
+            alt={`${categoryDescription} - Imagen ampliada`}
             className="carousel-modal-image"
           />
         </div>
