@@ -19,13 +19,13 @@ export const Portfolio: React.FC = () => {
       imageUrl: 'Diseño pjs.jpg',
       title: 'Diseño de personajes y trajes',
       description: 'Representación realista y detallada de personajes originales o inspirados',
-      link: '/servicios#diseno-personajes',
+      link: '/servicios#diseno-personajes-trajes',
     },
     {
       imageUrl: 'Eventos.jpg',
       title: 'Performance en vivo',
       description: 'Al combinar expresiones las ideas llegan mas profundo',
-      link: '/servicios#performance',
+      link: '/servicios#performance-en-vivo',
     },
     {
       imageUrl: 'Talleres.jpg',
