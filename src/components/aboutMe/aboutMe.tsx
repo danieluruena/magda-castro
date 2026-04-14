@@ -1,7 +1,7 @@
 import React from 'react'
-import { getImagePath } from '../../utils/getBasePath'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 import { useMetaTags } from '../../hooks/useMetaTags'
+import { LazyImage } from '../common/LazyImage'
 import '../../common.css'
 import './aboutMe.css'
 import './aboutMe.mobile.css'
@@ -19,7 +19,7 @@ export const AboutMe: React.FC = () => {
       <div className='about-content'>
         <h2 className="section-title">Un poco sobre mí</h2>
         <div>
-          <img src={getImagePath('sobre-mi/me-1.jpg')} alt="" className='about-image fade-in' />
+          <LazyImage src='sobre-mi/me-1.jpg' alt='Magda Castro - Artista de arte macabro y psicológico' className='about-image fade-in' />
         </div>
         <div>
           <p className="section-description">
@@ -39,7 +39,7 @@ export const AboutMe: React.FC = () => {
           </p>
         </div>
         <div>
-          <img src={getImagePath('sobre-mi/me-2.jpg')} alt="" className='about-image fade-in' />
+          <LazyImage src='sobre-mi/me-2.jpg' alt='Magda Castro - Detalle de obra artística gótica' className='about-image fade-in' />
         </div>
       </div>
     </section>
