@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Allow: /galeria
+Allow: /servicios
+Allow: /sobre-mi
+Allow: /contacto
+
+Disallow: /build/
+Disallow: /*.js$
+Disallow: /*.css$
+
+Sitemap: https://magdacastro.com/sitemap.xml

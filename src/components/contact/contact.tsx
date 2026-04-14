@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useMetaTags } from '../../hooks/useMetaTags'
 import './contact.css'
 import '../../common.css'
 import { SubmitModal } from './submitModal/submitModal'
@@ -13,6 +14,13 @@ type FieldErrors = {
 export const Contact: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [fieldErrors, setFieldErrors] = useState<FieldErrors>({})
+  
+  useMetaTags({
+    title: 'Contacto | Solicita tu Obra Personalizada | Magda Castro',
+    description: 'Contáctame para solicitar obras personalizadas, servicios de performance, talleres o cualquier colaboración artística.',
+    image: 'https://magdacastro.com/assets/sobre-mi/me-1.jpg',
+    url: 'https://magdacastro.com/contacto',
+  })
 
   const validateForm = (form: HTMLFormElement): boolean => {
     const errors: FieldErrors = {}
