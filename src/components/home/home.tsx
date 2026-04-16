@@ -20,7 +20,7 @@ export const Home: React.FC = () => {
   return (
     <>
       <div className="video-container">
-        <LazyVideo src='vbg.mp4' className='bg-video' />
+        <LazyVideo src='vbg.webm' className='bg-video' />
       </div>
       <section className="presentation">
         <h2 className="presentation-title fade-in">
