@@ -72,7 +72,7 @@ export const Services: React.FC = () => {
 
   return (
     <main className="services">
-      <div className="services-hero fade-in">
+      <div className="services-hero">
         <h1 className="main-title">Servicios</h1>
         <p className="section-description">Cada proyecto es un universo propio. Aquí encontrarás las formas en que podemos trabajar juntos.</p>
       </div>
