@@ -142,7 +142,7 @@ export const Contact: React.FC = () => {
                   name='message'
                   className={fieldErrors.message ? 'error' : ''}
                   onChange={() => handleFieldChange('message')}
-                />
+                  ></textarea>
                 {fieldErrors.message && <span className="error-message">Este campo es obligatorio</span>}
               </div>
 
