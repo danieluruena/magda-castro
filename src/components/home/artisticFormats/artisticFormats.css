@@ -1,5 +1,5 @@
 .artistic-formats {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../../../public/assets/fondo_rojo.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../../../public/assets/fondo_rojo.webp');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

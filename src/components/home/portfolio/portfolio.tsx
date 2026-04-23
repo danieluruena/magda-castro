@@ -10,25 +10,25 @@ export const Portfolio: React.FC = () => {
 
   const services = [
     {
-      imageUrl: 'Esculturas.jpg',
+      imageUrl: 'Esculturas.webp',
       title: 'Obras personalizadas',
       description: 'Piezas de arte únicas que reflejen tus ideas con un estilo impactante',
       link: '/servicios#obras-personalizadas',
     },
     {
-      imageUrl: 'Diseño pjs.jpg',
+      imageUrl: 'Diseño pjs.webp',
       title: 'Diseño de personajes y trajes',
       description: 'Representación realista y detallada de personajes originales o inspirados',
       link: '/servicios#diseno-personajes-trajes',
     },
     {
-      imageUrl: 'Eventos.jpg',
+      imageUrl: 'Eventos.webp',
       title: 'Performance en vivo',
       description: 'Al combinar expresiones las ideas llegan mas profundo',
       link: '/servicios#performance-en-vivo',
     },
     {
-      imageUrl: 'Talleres.jpg',
+      imageUrl: 'Talleres.webp',
       title: 'Charlas y talleres',
       description: 'Estoy abierta a compartir mis conocimientos y mi forma de ver el mundo',
       link: '/servicios#charlas-talleres',

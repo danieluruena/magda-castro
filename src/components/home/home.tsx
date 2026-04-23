@@ -14,7 +14,7 @@ export const Home: React.FC = () => {
   useMetaTags({
     title: 'Magda Castro | Arte Macabro, Escultura y Performance',
     description: 'Explora el arte macabro y psicológico. Especialista en escultura, maquillaje artístico FX, diseño de personajes y performance en vivo desde Medellín.',
-    image: 'https://magdacastro.com/assets/sobre-mi/me-1.jpg',
+    image: 'https://magdacastro.com/assets/sobre-mi/me-1.webp',
     url: 'https://magdacastro.com/',
   })
   return (
