@@ -9,19 +9,19 @@ export const ArtisticFormats: React.FC = () => {
 
   const artisticFormats = [
     {
-      image: 'escultura.jpg',
+      image: 'escultura.webp',
       title: 'Escultura',
       description: 'Figuras que traen al plano material los conceptos que no se puede explicar con simples palabras.',
       link: '/galeria#esculturas',
     },
     {
-      image: 'maquillaje.jpg',
+      image: 'maquillaje.webp',
       title: 'Maquillaje FX',
       description: 'Una extensión de nuestras expresiones mas alá de las limitaciones coporales.',
       link: '/galeria#maquillaje',
     },
     {
-      image: 'personajes.jpg',
+      image: 'personajes.webp',
       title: 'Creación de personajes y performance',
       description: 'Caracterizar las ideas mas controversiales e impactantes para el entorno social.',
       link: '/galeria#personajes-cosplay',

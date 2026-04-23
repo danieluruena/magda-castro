@@ -18,7 +18,7 @@ export const Contact: React.FC = () => {
   useMetaTags({
     title: 'Contacto | Solicita tu Obra Personalizada | Magda Castro',
     description: 'Contáctame para solicitar obras personalizadas, servicios de performance, talleres o cualquier colaboración artística.',
-    image: 'https://magdacastro.com/assets/sobre-mi/me-1.jpg',
+    image: 'https://magdacastro.com/assets/sobre-mi/me-1.webp',
     url: 'https://magdacastro.com/contacto',
   })
 
