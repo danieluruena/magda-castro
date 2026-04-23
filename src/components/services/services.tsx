@@ -18,7 +18,7 @@ const services = [
       'Instalaciones para espacios específicos',
       'Ediciones limitadas y piezas únicas',
     ],
-    imageUrl: 'Esculturas.jpg',
+    imageUrl: 'Esculturas.webp',
   },
   {
     id: 'diseno-personajes-trajes',
@@ -30,7 +30,7 @@ const services = [
       'Maquillaje FX y caracterización',
       'Personajes para eventos y producciones',
     ],
-    imageUrl: 'Diseño pjs.jpg',
+    imageUrl: 'Diseño pjs.webp',
     reversed: true,
   },
   {
@@ -43,7 +43,7 @@ const services = [
       'Colaboraciones con marcas y festivales',
       'Propuestas escénicas a medida',
     ],
-    imageUrl: 'Eventos.jpg',
+    imageUrl: 'Eventos.webp',
   },
   {
     id: 'charlas-talleres',
@@ -55,7 +55,7 @@ const services = [
       'Workshops de maquillaje FX',
       'Formatos presenciales y online',
     ],
-    imageUrl: 'Talleres.jpg',
+    imageUrl: 'Talleres.webp',
     reversed: true,
   },
 ]
@@ -66,7 +66,7 @@ export const Services: React.FC = () => {
   useMetaTags({
     title: 'Servicios Artísticos Customizados | Escultura, Maquillaje, Performance',
     description: 'Servicios de arte personalizados: obras únicas, diseño de personajes, performance en vivo, talleres y charlas. Especializada en arte oscuro y psicológico.',
-    image: 'https://magdacastro.com/assets/sobre-mi/me-1.jpg',
+    image: 'https://magdacastro.com/assets/sobre-mi/me-1.webp',
     url: 'https://magdacastro.com/servicios',
   })
 

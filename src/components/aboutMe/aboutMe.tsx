@@ -11,7 +11,7 @@ export const AboutMe: React.FC = () => {
   useMetaTags({
     title: 'Sobre Mí | Artista de Arte Macabro | Magda Castro',
     description: 'Artista especializada en arte macabro y psicológico basada en Medellín. Crea esculturas, performances y personajes góticos con una visión crítica y transgresora.',
-    image: 'https://magdacastro.com/assets/sobre-mi/me-1.jpg',
+    image: 'https://magdacastro.com/assets/sobre-mi/me-1.webp',
     url: 'https://magdacastro.com/sobre-mi',
   })
   return (
@@ -19,7 +19,7 @@ export const AboutMe: React.FC = () => {
       <div className='about-content'>
         <h2 className="section-title">Un poco sobre mí</h2>
         <div>
-          <LazyImage src='sobre-mi/me-1.jpg' alt='Magda Castro - Artista de arte macabro y psicológico' className='about-image fade-in' />
+          <LazyImage src='sobre-mi/me-1.webp' alt='Magda Castro - Artista de arte macabro y psicológico' className='about-image fade-in' />
         </div>
         <div>
           <p className="section-description">
@@ -39,7 +39,7 @@ export const AboutMe: React.FC = () => {
           </p>
         </div>
         <div>
-          <LazyImage src='sobre-mi/me-2.jpg' alt='Magda Castro - Detalle de obra artística gótica' className='about-image fade-in' />
+          <LazyImage src='sobre-mi/me-2.webp' alt='Magda Castro - Detalle de obra artística gótica' className='about-image fade-in' />
         </div>
       </div>
     </section>
