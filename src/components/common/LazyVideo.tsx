@@ -29,14 +29,9 @@ export const LazyVideo: React.FC<LazyVideoProps> = ({
       loop
       playsInline
       poster={posterImage ? getImagePath(posterImage) : undefined}
-      onCanPlay={(e) => {
-        // Mejorar rendimiento notificando al navegador que vea el video
-        e.currentTarget.play().catch(() => {
-          // Manejar si autoplay falla
-        })
-      }}
+      preload='false'
     >
-      <source src={videoPath} type="video/mp4" />
+      <source src={videoPath} type="video/webm" />
       <p>Tu navegador no soporta video HTML5</p>
     </video>
   )

@@ -1,5 +1,6 @@
-
 import { useState, useEffect } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { LazyImage } from '../../common/LazyImage'
 import '../../../common.css'
 import './carousel.css'
@@ -96,10 +97,10 @@ export const Carousel = ({ images, category = 'personajes_y_performances' }: Car
         </div>
         
         <button className="carousel-btn prev-btn" onClick={prevImage}>
-          <i className="fa-solid fa-arrow-left"></i>
+          <FontAwesomeIcon icon={faArrowLeft} />
         </button>
         <button className="carousel-btn next-btn" onClick={nextImage}>
-          <i className="fa-solid fa-arrow-right"></i>
+          <FontAwesomeIcon icon={faArrowRight} />
         </button>
       </div>
 
