@@ -13,26 +13,21 @@
   margin-bottom: 40px;
 }
 
-.makeup {
+.gallery-section {
   padding: 40px;
   width: 100%;
-  display: grid;
-  gap: 40px;
-  justify-items: center;
 }
 
-.sculptures {
-  padding: 40px;
-  width: 100%;
-  display: grid;
-  gap: 40px;
-  justify-items: center;
+.section-title {
+  color: #d7a36eff;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
-.characters-and-performances {
-  padding: 40px;
-  width: 100%;
+.artworks-grid {
   display: grid;
-  gap: 40px;
-  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
 }

@@ -1,13 +1,11 @@
 @media (max-width: 768px) {
-  .makeup {
-    background-attachment: unset;
+  .artworks-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 10px;
   }
 
-  .sculptures {
-    background-attachment: unset;
-  }
-
-  .characters-and-performances {
-    background-attachment: unset;
+  .gallery-section {
+    padding: 20px;
   }
 }
