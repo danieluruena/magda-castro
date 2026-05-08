@@ -1,4 +1,4 @@
-const IMAGE_CDN = process.env.REACT_APP_IMAGE_CDN
+const IMAGE_CDN = import.meta.env.VITE_ASSETS_BUCKET
 
 export const getImagePath = (imagePath: string): string => {
   if (IMAGE_CDN === 'netlify') {
