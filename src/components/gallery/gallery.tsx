@@ -4,6 +4,7 @@ import { useMetaTags } from '../../hooks/useMetaTags'
 import { ArtworkCard } from './artwork-card/artwork-card'
 import './gallery.css'
 import './gallery.mobile.css'
+import { getImagePath } from '../../utils/getBasePath'
 
 interface Artwork {
   title: string
@@ -17,26 +18,51 @@ export const Gallery = () => {
   useMetaTags({
     title: 'Galería | Escultura, Maquillaje FX, Personajes | Magda Castro',
     description: 'Galería de trabajos artísticos: escultura macabra, maquillaje artístico FX y diseño de personajes góticos. Obras oscuras e impactantes.',
-    image: 'https://magdacastro.com/assets/galeria/esculturas/1.webp',
+    image: getImagePath('galeria/esculturas/1.webp'),
     url: 'https://magdacastro.com/galeria',
   })
 
-  const makeupArtworks: Artwork[] = [
+  const makeups: Artwork[] = [
     {
-      title: 'Obra de Maquillaje 1',
+      title: 'Bruja necrófaga',
       description: 'Descripción de la obra de maquillaje artístico y efectos especiales.',
       images: [
-'https://via.placeholder.com/600x450', 'https://via.placeholder.com/600x450/333', 'https://via.placeholder.com/600x450/666',
-],
+        'maquillajes/bruja-necrofaga/1.webp',
+        'maquillajes/bruja-necrofaga/2.webp',
+        'maquillajes/bruja-necrofaga/3.webp',
+        'maquillajes/bruja-necrofaga/4.webp',
+        'maquillajes/bruja-necrofaga/5.webp',
+        'maquillajes/bruja-necrofaga/6.webp',
+        'maquillajes/bruja-necrofaga/7.webp',
+        'maquillajes/bruja-necrofaga/8.webp',
+        'maquillajes/bruja-necrofaga/9.webp',
+    ],
     },
     {
-      title: 'Obra de Maquillaje 2',
+      title: 'Pumpkin',
       description: 'Descripción de la obra de maquillaje artístico y efectos especiales.',
-      images: ['https://via.placeholder.com/600x450', 'https://via.placeholder.com/600x450/333'],
+      images: [
+        'maquillajes/pumpkin/1.webp',
+        'maquillajes/pumpkin/2.webp',
+        'maquillajes/pumpkin/3.webp',
+        'maquillajes/pumpkin/4.webp',
+      ],
+    },
+    {
+      title: 'Careta',
+      description: 'Descripción de la obra de maquillaje artístico y efectos especiales.',
+      images: [
+        'maquillajes/careta/1.webp',
+        'maquillajes/careta/2.webp',
+        'maquillajes/careta/3.webp',
+        'maquillajes/careta/4.webp',
+        'maquillajes/careta/5.webp',
+        'maquillajes/careta/6.webp',
+      ],
     },
   ]
 
-  const sculptureArtworks: Artwork[] = [
+  const sculptures: Artwork[] = [
     {
       title: 'Escultura 1',
       description: 'Descripción de la escultura macabra y conceptual.',
@@ -51,7 +77,7 @@ export const Gallery = () => {
     },
   ]
 
-  const characterArtworks: Artwork[] = [
+  const characters: Artwork[] = [
     {
       title: 'Personaje 1',
       description: 'Descripción del personaje y performance gótico.',
@@ -72,7 +98,7 @@ export const Gallery = () => {
       <div className='gallery-section'>
         <h2 className='section-title'>Maquillaje artístico y FX</h2>
         <div className='artworks-grid'>
-          {makeupArtworks.map((artwork, idx) => (
+          {makeups.map((artwork, idx) => (
             <ArtworkCard key={idx} {...artwork} />
           ))}
         </div>
@@ -81,7 +107,7 @@ export const Gallery = () => {
       <div className='gallery-section' id='esculturas'>
         <h2 className='section-title'>Esculturas</h2>
         <div className='artworks-grid'>
-          {sculptureArtworks.map((artwork, idx) => (
+          {sculptures.map((artwork, idx) => (
             <ArtworkCard key={idx} {...artwork} />
           ))}
         </div>
@@ -90,7 +116,7 @@ export const Gallery = () => {
       <div className='gallery-section' id='personajes-cosplay'>
         <h2 className='section-title'>Personajes y performances</h2>
         <div className='artworks-grid'>
-          {characterArtworks.map((artwork, idx) => (
+          {characters.map((artwork, idx) => (
             <ArtworkCard key={idx} {...artwork} />
           ))}
         </div>
