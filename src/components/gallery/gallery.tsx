@@ -1,7 +1,7 @@
 import { useHashScroll } from '../../hooks/useHashScroll'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 import { useMetaTags } from '../../hooks/useMetaTags'
-import { ArtworkCard } from './artwork-card/artwork-card'
+import { ArtworkCard } from './artworkCard/artworkCard'
 import './gallery.css'
 import './gallery.mobile.css'
 import { getImagePath } from '../../utils/getBasePath'
@@ -39,7 +39,7 @@ export const Gallery = () => {
     ],
     },
     {
-      title: 'Pumpkin',
+      title: 'Pumpkinhead',
       description: 'Descripción de la obra de maquillaje artístico y efectos especiales.',
       images: [
         'maquillajes/pumpkin/1.webp',
