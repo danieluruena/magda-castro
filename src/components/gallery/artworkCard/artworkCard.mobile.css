@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+  .artwork-title {
+    font-size: 1.2rem;
+  }
+
+  .artwork-description {
+    font-size: 0.9rem;
+  }
+}
