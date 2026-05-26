@@ -14,19 +14,13 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true,
-    },
+    ecmaFeatures: { jsx: true },
   },
   plugins: [
     'react',
     '@typescript-eslint',
   ],
-  settings: {
-    react: {
-      version: 'detect',
-    },
-  },
+  settings: { react: { version: 'detect' } },
   rules: {
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',

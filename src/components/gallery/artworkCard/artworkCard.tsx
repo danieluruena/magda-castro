@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
-import './artworkCard.css'
 import { LazyImage } from '../../common/LazyImage'
+import './artworkCard.css'
+import './artworkCard.mobile.css'
 
 interface ArtworkCardProps {
   title: string
