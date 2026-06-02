@@ -2,6 +2,7 @@ import { useState } from 'react'
 import '../../../../common.css'
 import './work.css'
 import './work.mobile.css'
+import { getImagePath } from '../../../../utils/getBasePath'
 
 export type WorkProps = {
   title: string
@@ -14,17 +15,30 @@ export const Work: React.FC<WorkProps> = ({
 }) => {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false)
   
+  // Detectar si es un video de YouTube
+  const isYouTube = videoUrl.includes('youtube')
+  
   // Extraer el ID del video de YouTube
   const getYouTubeId = (url: string) => {
     const match = url.match(/embed\/([^?]+)/)
     return match ? match[1] : ''
   }
   
-  const videoId = getYouTubeId(videoUrl)
-  const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`
+  // Obtener URLs apropiadas según el tipo de video
+  let thumbnailUrl = ''
+  let finalVideoUrl = videoUrl
   
-  // Convertir a youtube-nocookie.com para privacidad
-  const privacyEnhancedUrl = videoUrl.replace('youtube.com', 'youtube-nocookie.com')
+  if (isYouTube) {
+    const videoId = getYouTubeId(videoUrl)
+    thumbnailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`
+    finalVideoUrl = videoUrl.replace('youtube.com', 'youtube-nocookie.com')
+  } else {
+    // Para videos WebM en R2
+    const videoFileName = videoUrl
+    const thumbnailFileName = videoFileName.replace(/\.[^/.]+$/, '') + '-thumbnail.webp'
+    thumbnailUrl = getImagePath(thumbnailFileName)
+    finalVideoUrl = getImagePath(videoFileName)
+  }
   
   const handleLoadVideo = () => {
     setIsVideoLoaded(true)
@@ -49,9 +63,9 @@ export const Work: React.FC<WorkProps> = ({
               </svg>
             </button>
           </div>
-        ) : (
+        ) : isYouTube ? (
           <iframe
-            src={privacyEnhancedUrl}
+            src={finalVideoUrl}
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             width="100%"
@@ -60,6 +74,14 @@ export const Work: React.FC<WorkProps> = ({
             title={title}
             loading="lazy"
           ></iframe>
+        ) : (
+          <video
+            src={finalVideoUrl}
+            controls
+            height="100%"
+            className="work-video"
+            title={title}
+          ></video>
         )}
       </div>
       <p className="work-description">{description}</p>
