@@ -4,6 +4,7 @@ import { getImagePath } from '../../utils/getBasePath'
 import './contact.css'
 import '../../common.css'
 import { SubmitModal } from './submitModal/submitModal'
+import { Turnstile } from '@marsidev/react-turnstile'
 
 type FieldErrors = {
   name?: boolean
@@ -12,9 +13,17 @@ type FieldErrors = {
   message?: boolean
 }
 
+type ContactFormData = {
+  name: string
+  phone: string
+  email: string
+  message: string
+}
+
 export const Contact: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [fieldErrors, setFieldErrors] = useState<FieldErrors>({})
+  const [turnstileToken, setToken] = useState('')
   
   useMetaTags({
     title: 'Contacto | Solicita tu Obra Personalizada | Magda Castro',
@@ -23,17 +32,27 @@ export const Contact: React.FC = () => {
     url: 'https://magdacastro.com/contacto',
   })
 
-  const validateForm = (form: HTMLFormElement): boolean => {
-    const errors: FieldErrors = {}
+  const extractFormValues = (form: HTMLFormElement): ContactFormData => {
     const name = form.elements.namedItem('name') as HTMLInputElement
     const phone = form.elements.namedItem('phone') as HTMLInputElement
     const email = form.elements.namedItem('email') as HTMLInputElement
     const message = form.elements.namedItem('message') as HTMLTextAreaElement
 
-    if (!name.value.trim()) errors.name = true
-    if (!phone.value.trim()) errors.phone = true
-    if (!email.value.trim()) errors.email = true
-    if (!message.value.trim()) errors.message = true
+    return {
+      name: name.value.trim(),
+      phone: phone.value.trim(),
+      email: email.value.trim(),
+      message: message.value.trim(),
+    }
+  }
+
+  const validateForm = (formValues: ContactFormData): boolean => {
+    const errors: FieldErrors = {}
+
+    if (!formValues.name) errors.name = true
+    if (!formValues.phone) errors.phone = true
+    if (!formValues.email) errors.email = true
+    if (!formValues.message) errors.message = true
 
     setFieldErrors(errors)
     return Object.keys(errors).length === 0
@@ -43,28 +62,25 @@ export const Contact: React.FC = () => {
     e.preventDefault()
 
     const form = e.currentTarget
+
+    const formValues = extractFormValues(form)
     
-    if (!validateForm(form)) {
+    if (!validateForm(formValues)) {
       return
     }
 
-    const data = new FormData(form)
-    console.log(data)
-    const encoded = new URLSearchParams(data as any).toString()
-
     try {
-      if (process.env.NODE_ENV !== 'development') {
-        const response = await fetch('/', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: encoded,
-        })
-  
-        if (!response.ok) {
-          console.error(`Error al enviar el mensaje: ${response.status}`)
-          throw new Error('Error al enviar el mensaje')
-        }
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ ...formValues, turnstileToken }),
+      })
+
+      if (!response.ok) {
+        console.error(`Error al enviar el mensaje: ${response.status}`)
+        throw new Error('Error al enviar el mensaje')
       }
+      
 
       console.log('Mensaje enviado correctamente')
       form.reset()
@@ -102,7 +118,6 @@ export const Contact: React.FC = () => {
               method='post'
               className="form"
               name="contact">
-              <input type="hidden" name="form-name" value="contact" />
               
               <div className="form-field">
                 <input 
@@ -149,6 +164,10 @@ export const Contact: React.FC = () => {
               </div>
 
               <button className="main-btn" type="submit">Enviar</button>
+              <Turnstile
+                siteKey={import.meta.env.VITE_TURNSTILE_SITE_KEY}
+                onSuccess={(token) => { setToken(token) }}
+              />
             </form>
           </div>
         </div>
