@@ -70,9 +70,10 @@ export const Services: React.FC = () => {
     image: getImagePath('sobre-mi/me-1.webp'),
     url: 'https://magdacastro.com/servicios',
   })
+  const servicesStyle = { backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('${getImagePath('fondo_oscuro.webp')}')` }
 
   return (
-    <main className="services">
+    <main className="services" style={servicesStyle}>
       <div className="services-hero">
         <h1 className="main-title">Servicios</h1>
         <p className="section-description">Cada proyecto es un universo propio. Aquí encontrarás las formas en que podemos trabajar juntos.</p>

@@ -21,6 +21,7 @@ export const Gallery = () => {
     image: getImagePath('galeria/esculturas/1.webp'),
     url: 'https://magdacastro.com/galeria',
   })
+  const galleryStyle = { backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('${getImagePath('fondo_oscuro.webp')}')` }
 
   const makeups: Artwork[] = [
     {
@@ -236,7 +237,7 @@ export const Gallery = () => {
     },
   ]
   return (
-    <div className='gallery'>
+    <div className='gallery' style={galleryStyle}>
       <h1 className='main-title' id='maquillaje'>Galería</h1>
       
       <div className='gallery-section'>

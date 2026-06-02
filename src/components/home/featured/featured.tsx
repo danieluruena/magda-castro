@@ -2,10 +2,17 @@ import { useScrollAnimation } from '../../../hooks/useScrollAnimation'
 import { Work } from './work/work'
 import './featured.css'
 import './featured.mobile.css'
+import { getImagePath } from '../../../utils/getBasePath'
 
 export const Featured: React.FC = () => {
   useScrollAnimation()
+  const featuredStyle = { backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('${getImagePath('fondo_rojo.webp')}')` }
   const featuredWorks = [
+    {
+      title: 'Hammer Metal Fest 2026 - Pereira',
+      description: 'Performance para la introducción e intermedio del festival Hammer Metal Fest presentado por primera vez en su edición de 2026 en Pereira.',
+      videoUrl: 'eventos/hammer-metal-fest-pereira-2026/hammer-metal-fest-pereira-2026.webm',
+    },
     {
       title: 'Tenebrarum en Rock al Parque 2025',
       description: 'Performance para la presentación de la banda de metal Tenebrarum en el festival de Rock Al Parque 2025, para la cual se realizó el diseño de un nuevo personaje, junto a la elaboración del traje, guion del performance y maquillaje de los miembros de la banda.',
@@ -18,7 +25,7 @@ export const Featured: React.FC = () => {
     },
   ]
   return (
-    <section className="featured-works">
+    <section className="featured-works" style={featuredStyle}>
       <h2 className="section-title fade-in">Trabajos Destacados</h2>
       <div className="works-container">
         {featuredWorks.map((work) => {

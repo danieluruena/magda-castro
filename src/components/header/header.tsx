@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
+import { getImagePath } from '../../utils/getBasePath'
 import './header.css'
 import './header.mobile.css'
 import '../../common.css'
@@ -18,13 +19,13 @@ export const Header: React.FC = () => {
     }
   }
 
-  const headerClass = location.pathname !== '/' ? 'header with-bg' : 'header'
+  const headerStyle = location.pathname !== '/' ? { backgroundImage: `url('${getImagePath('fondo_rojo.webp')}')` } : undefined
 
   return (
-    <header className={headerClass}>
+    <header className="header" style={headerStyle}>
       <div className="header-content">
         <NavLink className="logo-link" to="/" onClick={() => setIsMenuOpen(false)}>
-          <img src="assets/logo-dorado.webp" alt="Magda Castro" className="logo" />
+          <img src={getImagePath('logo-dorado.webp')} alt="Magda Castro" className="logo" />
         </NavLink>
         <button className={`hamburger ${isMenuOpen ? 'hamburger-open' : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Menu">
           <span></span>

@@ -15,8 +15,9 @@ export const AboutMe: React.FC = () => {
     image: getImagePath('sobre-mi/me-1.webp'),
     url: 'https://magdacastro.com/sobre-mi',
   })
+  const aboutStyle = { backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('${getImagePath('fondo_oscuro.webp')}')` }
   return (
-    <section id="about" className="about">
+    <section id="about" className="about" style={aboutStyle}>
       <div className='about-content'>
         <h2 className="section-title">Un poco sobre mí</h2>
         <div>
