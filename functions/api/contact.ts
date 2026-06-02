@@ -54,7 +54,9 @@ const validateTurnstileToken = async (token: string, secretKey: string): Promise
 }
 
 const sanitizeFormData = (data: ContactFormData): ContactFormData => {
-  if (!ContactFormDataSchema.safeParse(data).success) {
+  const validationResult = ContactFormDataSchema.safeParse(data)
+  if (!validationResult.success) {
+    console.error('Errores de validación del formulario:', validationResult.error.format())
     throw new Error('Datos del formulario no válidos')
   }
 
