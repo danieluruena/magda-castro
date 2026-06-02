@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useMetaTags } from '../../hooks/useMetaTags'
+import { getImagePath } from '../../utils/getBasePath'
 import './contact.css'
 import '../../common.css'
 import { SubmitModal } from './submitModal/submitModal'
@@ -83,9 +84,10 @@ export const Contact: React.FC = () => {
       })
     }
   }
+  const contactStyle = { backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('${getImagePath('fondo_oscuro.webp')}')` }
   return (
     <>
-      <section id="contact" className="contact">
+      <section id="contact" className="contact" style={contactStyle}>
         <div className="contact-layout">
           <div className="contact-info">
             <h2 className="section-title">Contáctame</h2>

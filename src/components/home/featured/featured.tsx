@@ -2,9 +2,11 @@ import { useScrollAnimation } from '../../../hooks/useScrollAnimation'
 import { Work } from './work/work'
 import './featured.css'
 import './featured.mobile.css'
+import { getImagePath } from '../../../utils/getBasePath'
 
 export const Featured: React.FC = () => {
   useScrollAnimation()
+  const featuredStyle = { backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('${getImagePath('fondo_rojo.webp')}')` }
   const featuredWorks = [
     {
       title: 'Tenebrarum en Rock al Parque 2025',
@@ -18,7 +20,7 @@ export const Featured: React.FC = () => {
     },
   ]
   return (
-    <section className="featured-works">
+    <section className="featured-works" style={featuredStyle}>
       <h2 className="section-title fade-in">Trabajos Destacados</h2>
       <div className="works-container">
         {featuredWorks.map((work) => {

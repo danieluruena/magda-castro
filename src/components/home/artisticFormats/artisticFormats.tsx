@@ -3,9 +3,11 @@ import './artisticFormats.mobile.css'
 import '../../../common.css'
 import { ArtisticFormat } from './artisticFormat/artisticFormat'
 import { useScrollAnimation } from '../../../hooks/useScrollAnimation'
+import { getImagePath } from '../../../utils/getBasePath'
 
 export const ArtisticFormats: React.FC = () => {
   useScrollAnimation()
+  const artisticFormatsStyle = { backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('${getImagePath('fondo_rojo.webp')}')` }
 
   const artisticFormats = [
     {
@@ -28,7 +30,7 @@ export const ArtisticFormats: React.FC = () => {
     },
   ]
   return (
-    <section className="artistic-formats">
+    <section className="artistic-formats" style={artisticFormatsStyle}>
       <h2 className='section-title'>Diversas formas de expresión</h2>
       <p className='section-description'>Cada idea requiere su propia forma de expresarse.</p>
       {artisticFormats.map((format) => (
