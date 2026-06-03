@@ -8,15 +8,14 @@ export type WorkProps = {
   title: string
   description: string
   videoUrl: string
+  orientation: 'horizontal' | 'vertical',
+  isYouTube: boolean
 };
 
 export const Work: React.FC<WorkProps> = ({
-  title, description, videoUrl,
+  title, description, videoUrl, orientation, isYouTube,
 }) => {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false)
-  
-  // Detectar si es un video de YouTube
-  const isYouTube = videoUrl.includes('youtube')
   
   // Extraer el ID del video de YouTube
   const getYouTubeId = (url: string) => {
@@ -47,7 +46,7 @@ export const Work: React.FC<WorkProps> = ({
   return (
     <div className="featured-work">
       <h3 className="work-title">{title}</h3>
-      <div className="work-video-container">
+      <div className={`work-video-container ${orientation}`}>
         {!isVideoLoaded ? (
           <div className="video-placeholder" onClick={handleLoadVideo}>
             <img 
