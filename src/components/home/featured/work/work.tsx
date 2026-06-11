@@ -3,12 +3,13 @@ import '../../../../common.css'
 import './work.css'
 import './work.mobile.css'
 import { getImagePath } from '../../../../utils/getBasePath'
+import { Orientation } from '../../../../models/constants'
 
 export type WorkProps = {
   title: string
   description: string
   videoUrl: string
-  orientation: 'horizontal' | 'vertical',
+  orientation: Orientation,
   isYouTube: boolean
 };
 
