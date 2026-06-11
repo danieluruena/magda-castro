@@ -3,6 +3,7 @@ import { Work } from './work/work'
 import './featured.css'
 import './featured.mobile.css'
 import { getImagePath } from '../../../utils/getBasePath'
+import { Orientation } from '../../../models/constants'
 
 export const Featured: React.FC = () => {
   useScrollAnimation()
@@ -12,16 +13,22 @@ export const Featured: React.FC = () => {
       title: 'Hammer Metal Fest 2026 - Pereira',
       description: 'Performance para la introducción e intermedio del festival Hammer Metal Fest presentado por primera vez en su edición de 2026 en Pereira.',
       videoUrl: 'eventos/hammer-metal-fest-pereira-2026/hammer-metal-fest-pereira-2026.webm',
+      orientation: Orientation.vertical,
+      isYouTube: false,
     },
     {
       title: 'Tenebrarum en Rock al Parque 2025',
       description: 'Performance para la presentación de la banda de metal Tenebrarum en el festival de Rock Al Parque 2025, para la cual se realizó el diseño de un nuevo personaje, junto a la elaboración del traje, guion del performance y maquillaje de los miembros de la banda.',
       videoUrl: 'https://www.youtube.com/embed/W_yHgiakGq4?h=null&playlist=W_yHgiakGq4&autoplay=0&controls=1&loop=0&autopause=0&playsinline=1&mute=0&start=2034',
+      orientation: Orientation.horizontal,
+      isYouTube: true,
     },
     {
       title: 'Athanator - Alienado',
       description: 'Video musical para la banda de metal Athanator de Medellín en el cual participé con mi personaje "La Sacerdotisa", mi obra "Ecos de la existencia", realización de performance, maquillaje, vestuario e indumentaria.',
       videoUrl: 'https://www.youtube.com/embed/gDuTWrkTtMY?h=null&playlist=gDuTWrkTtMY&autoplay=0&controls=1&loop=0&autopause=0&playsinline=1&mute=0',
+      orientation: Orientation.horizontal,
+      isYouTube: true,
     },
   ]
   return (
