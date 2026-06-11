@@ -10,4 +10,8 @@
   .work-description {
     font-size: 18px;
   }
+
+  .work-video-container.horizontal .video-thumbnail {
+    width: 100%;
+  }
 }
