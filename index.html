@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8" />
@@ -7,14 +7,11 @@
   <title>Magda Castro | Arte Macabro, Escultura y Performance</title>
   <meta name="description"
     content="Artista de arte macabro y psicológico. Especialista en escultura conceptual, maquillaje artístico FX, diseño de personajes y performance. Obras personalizadas en Medellín." />
-  <meta name="keywords"
-    content="escultura macabra, arte oscuro, maquillaje FX, performance art, diseño de personajes, Medellín" />
   <meta name="author" content="Magda Castro" />
   <meta name="robots" content="index, follow" />
-  <meta name="language" content="es" />
-  <meta name="revisit-after" content="30 days" />
 
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CO" />
   <meta property="og:title" content="Magda Castro | Arte Macabro, Escultura y Performance" />
   <meta property="og:description"
     content="Artista de arte macabro y psicológico. Especialista en escultura conceptual, maquillaje artístico FX, diseño de personajes y performance. Obras personalizadas en Medellín." />
@@ -37,41 +34,30 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Magda Castro",
-      "description": "Artista de arte macabro y psicológico especializada en escultura, maquillaje artístico y performance",
-      "image": "https://magdacastro.com/assets/galeria/personajes_y_performances/1.webp",
-      "url": "https://magdacastro.com",
-      "telephone": "",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Medellín",
-        "addressLocality": "Medellín",
-        "addressRegion": "Antioquia",
-        "addressCountry": "CO"
-      },
-      "areaServed": "CO",
-      "sameAs": [
-        "https://www.instagram.com/magdacastro.art",
-        "https://www.facebook.com/magda.nayiber.castro"
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://magdacastro.com/#person",
+          "name": "Magda Castro",
+          "url": "https://magdacastro.com/",
+          "image": "https://magdacastro.com/assets/galeria/personajes_y_performances/1.webp",
+          "jobTitle": "Artista de Arte Macabro",
+          "description": "Artista especializada en escultura conceptual, maquillaje artístico FX, diseño de personajes y performance. Obras personalizadas e intervenciones artísticas.",
+          "sameAs": [
+            "https://www.instagram.com/magdacastro.art",
+            "https://www.facebook.com/magda.nayiber.castro"
+          ],
+          "knowsAbout": ["Escultura", "Maquillaje FX", "Performance Art", "Diseño de Personajes", "Arte Gótico"]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://magdacastro.com/#website",
+          "url": "https://magdacastro.com/",
+          "name": "Magda Castro",
+          "inLanguage": "es-CO",
+          "publisher": { "@id": "https://magdacastro.com/#person" }
+        }
       ]
-    }
-  </script>
-
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Magda Castro",
-      "url": "https://magdacastro.com",
-      "image": "https://magdacastro.com/assets/galeria/personajes_y_performances/1.webp",
-      "jobTitle": "Artista de Arte Macabro",
-      "description": "Artista especializada en escultura conceptual, maquillaje artístico FX, diseño de personajes y performance. Obras personalizadas e intervenciones artísticas.",
-      "sameAs": [
-        "https://www.instagram.com/magdacastro.art",
-        "https://www.facebook.com/magda.nayiber.castro"
-      ],
-      "knowsAbout": ["Escultura", "Maquillaje FX", "Performance Art", "Diseño de Personajes", "Arte Gótico"]
     }
   </script>
 </head>
