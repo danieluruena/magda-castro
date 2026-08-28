@@ -24,9 +24,9 @@ export const Home: React.FC = () => {
         <LazyVideo src='vbg.webm' className='bg-video' posterImage='vbg-poster.webp' />
       </div>
       <section className="presentation">
-        <h2 className="presentation-title fade-in">
+        <h1 className="presentation-title fade-in">
           Arte macabro y psicológico
-        </h2>
+        </h1>
         <p className="presentation-description fade-in">
           Explora la belleza de lo macabro y la realidad de la psique trastornada.
         </p>
