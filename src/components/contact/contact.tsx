@@ -106,7 +106,7 @@ export const Contact: React.FC = () => {
       <section id="contact" className="contact" style={contactStyle}>
         <div className="contact-layout">
           <div className="contact-info">
-            <h2 className="section-title">Contáctame</h2>
+            <h1 className="section-title">Contáctame</h1>
             <p className="section-description">
               ¿Tienes una idea que quieres hacer realidad con un estilo macabro o visceral?
               Cuéntame tu visión y la convertimos en arte.

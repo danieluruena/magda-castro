@@ -19,7 +19,7 @@ export const AboutMe: React.FC = () => {
   return (
     <section id="about" className="about" style={aboutStyle}>
       <div className='about-content'>
-        <h2 className="section-title">Un poco sobre mí</h2>
+        <h1 className="section-title">Un poco sobre mí</h1>
         <div>
           <LazyImage src='sobre-mi/me-1.webp' alt='Magda Castro - Artista de arte macabro y psicológico' className='about-image fade-in' />
         </div>
