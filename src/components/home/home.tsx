@@ -7,7 +7,7 @@ import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 import { useMetaTags } from '../../hooks/useMetaTags'
 import { LazyVideo } from '../common/LazyVideo'
 import { Portfolio } from './portfolio/portfolio'
-import { Featured } from './featured/featured'
+import { LatestWorks } from './latestWorks/latestWorks'
 import { getImagePath } from '../../utils/getBasePath'
 
 export const Home: React.FC = () => {
@@ -31,9 +31,9 @@ export const Home: React.FC = () => {
           Explora la belleza de lo macabro y la realidad de la psique trastornada.
         </p>
       </section>
+      <LatestWorks />
       <ArtisticFormats />
       <Portfolio />
-      <Featured />
     </>
   )
 }

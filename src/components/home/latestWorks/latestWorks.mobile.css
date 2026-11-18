@@ -1,0 +1,32 @@
+@media (max-width: 768px) {
+  .latest-works {
+    padding: 48px 20px;
+    background-attachment: scroll;
+  }
+
+  .latest-works__header {
+    gap: 12px;
+    margin-bottom: 36px;
+  }
+
+  .latest-works__eyebrow {
+    font-size: 11px;
+  }
+
+  .latest-works__eyebrow-line {
+    width: 32px;
+  }
+
+  .latest-works__header .section-description {
+    font-size: 16px;
+  }
+
+  .latest-works__featured {
+    margin-bottom: 24px;
+  }
+
+  .latest-works__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
