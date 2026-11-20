@@ -14,6 +14,7 @@ const Services = lazy(() => import('./components/services/services.tsx').then(mo
 const AboutMe = lazy(() => import('./components/aboutMe/aboutMe.tsx').then(module => ({ default: module.AboutMe })))
 const Store = lazy(() => import('./components/store/store.tsx').then(module => ({ default: module.Store })))
 const Blog = lazy(() => import('./components/blog/blog.tsx').then(module => ({ default: module.Blog })))
+const BlogArticle = lazy(() => import('./components/blog/blogArticle/blogArticle.tsx').then(module => ({ default: module.BlogArticle })))
 const Contact = lazy(() => import('./components/contact/contact.tsx').then(module => ({ default: module.Contact })))
 
 const App: React.FC = () => {
@@ -29,6 +30,7 @@ const App: React.FC = () => {
             <Route path="/sobre-mi" element={<AboutMe />} />
             <Route path="/tienda" element={<Store />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogArticle />} />
             <Route path="/contacto" element={<Contact />} />
           </Routes>
         </Suspense>

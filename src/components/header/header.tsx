@@ -57,8 +57,8 @@ export const Header: React.FC = () => {
               </ul>
             </li>
             <li><NavLink to="/sobre-mi" className="nav-link" onClick={() => setIsMenuOpen(false)}>Sobre mí</NavLink></li>
-            {/* <li><NavLink to="/tienda" className="nav-link" onClick={() => setIsMenuOpen(false)}>Tienda</NavLink></li>
-            <li><NavLink to="/blog" className="nav-link" onClick={() => setIsMenuOpen(false)}>Blog</NavLink></li> */}
+            {/* <li><NavLink to="/tienda" className="nav-link" onClick={() => setIsMenuOpen(false)}>Tienda</NavLink></li> */}
+            <li><NavLink to="/blog" className="nav-link" onClick={() => setIsMenuOpen(false)}>Blog</NavLink></li>
             <li><NavLink to="/contacto" className="nav-link" onClick={() => setIsMenuOpen(false)}>Contacto</NavLink></li>
           </ul>
         </nav>
