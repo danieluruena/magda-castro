@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+  .blog-gallery {
+    margin: 2rem 0;
+  }
+
+  .blog-gallery__frame {
+    height: clamp(240px, 55vh, 480px);
+    border-radius: 12px;
+  }
+
+  .blog-gallery__btn {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+
+  .blog-gallery__btn--prev {
+    left: 8px;
+  }
+
+  .blog-gallery__btn--next {
+    right: 8px;
+  }
+}

@@ -1,0 +1,32 @@
+@media (max-width: 768px) {
+  .blog-article {
+    padding: 60px 5% 90px;
+    background-attachment: scroll;
+  }
+
+  .blog-article__content {
+    padding: 24px 20px 32px;
+    border-radius: 16px;
+  }
+
+  .blog-article__header {
+    margin-bottom: 28px;
+  }
+
+  .blog-article__excerpt {
+    font-size: 16px;
+  }
+
+  .blog-article__cover {
+    margin-bottom: 28px;
+    border-radius: 16px;
+  }
+
+  .blog-article__body {
+    font-size: 16px;
+  }
+
+  .blog-article__body blockquote {
+    font-size: 1.2rem;
+  }
+}
