@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+  .blog {
+    padding: 60px 5% 90px;
+    background-attachment: scroll;
+  }
+
+  .blog-hero {
+    margin-bottom: 40px;
+  }
+
+  .blog-hero .section-description {
+    font-size: 16px;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .blog-more {
+    margin-top: 40px;
+  }
+}

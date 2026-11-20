@@ -1,6 +1,10 @@
 import { useEffect } from 'react'
 
-export const useScrollAnimation = () => {
+/**
+ * Observa los `.fade-in` del DOM. Si pasas `trigger`, vuelve a observarlos al cambiar
+ * (útil cuando el contenido llega de forma asíncrona).
+ */
+export const useScrollAnimation = (trigger?: unknown) => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -19,5 +23,5 @@ export const useScrollAnimation = () => {
     })
 
     return () => observer.disconnect()
-  }, [])
+  }, [trigger])
 }
